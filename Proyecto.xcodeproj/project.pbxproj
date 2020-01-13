@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		169872FC238D979F007DD7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169872FB238D979F007DD7D1 /* Assets.xcassets */; };
 		169872FF238D979F007DD7D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169872FD238D979F007DD7D1 /* LaunchScreen.storyboard */; };
 		16987307238D97D3007DD7D1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16987306238D97D3007DD7D1 /* ViewController.xib */; };
+		4936E1D823CD360800BC46A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936E1D623CD360800BC46A6 /* LoginViewController.swift */; };
+		4936E1DB23CD383300BC46A6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4936E1DA23CD383300BC46A6 /* LoginViewController.xib */; };
 		494992D623CCD2590073E67E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 494992D523CCD2590073E67E /* Default-568h@2x.png */; };
 		B0C09CD4CBF9B63E65452474 /* Pods_Proyecto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD5D9C8DC0D7FCD2F18B03 /* Pods_Proyecto.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,8 @@
 		16987306238D97D3007DD7D1 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		1BAD5D9C8DC0D7FCD2F18B03 /* Pods_Proyecto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proyecto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D72F324F36A49F0C164564D /* Pods-Proyecto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proyecto.release.xcconfig"; path = "Target Support Files/Pods-Proyecto/Pods-Proyecto.release.xcconfig"; sourceTree = "<group>"; };
+		4936E1D623CD360800BC46A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4936E1DA23CD383300BC46A6 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		494992D523CCD2590073E67E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BB14A2E0A676DB6CC0254C4A /* Pods-Proyecto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proyecto.debug.xcconfig"; path = "Target Support Files/Pods-Proyecto/Pods-Proyecto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,7 +54,6 @@
 				BB14A2E0A676DB6CC0254C4A /* Pods-Proyecto.debug.xcconfig */,
 				1D72F324F36A49F0C164564D /* Pods-Proyecto.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,6 +94,8 @@
 				169872FB238D979F007DD7D1 /* Assets.xcassets */,
 				169872FD238D979F007DD7D1 /* LaunchScreen.storyboard */,
 				16987300238D979F007DD7D1 /* Info.plist */,
+				4936E1DA23CD383300BC46A6 /* LoginViewController.xib */,
+				4936E1D623CD360800BC46A6 /* LoginViewController.swift */,
 			);
 			path = Proyecto;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4936E1DB23CD383300BC46A6 /* LoginViewController.xib in Resources */,
 				169872FF238D979F007DD7D1 /* LaunchScreen.storyboard in Resources */,
 				494992D623CCD2590073E67E /* Default-568h@2x.png in Resources */,
 				16987307238D97D3007DD7D1 /* ViewController.xib in Resources */,
@@ -229,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4936E1D823CD360800BC46A6 /* LoginViewController.swift in Sources */,
 				169872F7238D979C007DD7D1 /* ViewController.swift in Sources */,
 				169872F3238D979C007DD7D1 /* AppDelegate.swift in Sources */,
 				169872F5238D979C007DD7D1 /* SceneDelegate.swift in Sources */,

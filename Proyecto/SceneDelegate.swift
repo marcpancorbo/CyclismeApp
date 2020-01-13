@@ -7,8 +7,30 @@
 //
 
 import UIKit
+import GoogleSignIn
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+class SceneDelegate: UIResponder, UIWindowSceneDelegate, GIDSignInDelegate {
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+            print("\(error.localizedDescription)")
+        } else {
+            // Perform any operations on signed in user here.
+            //            let userId = user.userID                  // For client-side use only!
+            //            let idToken = user.authentication.idToken // Safe to send to the server
+            let fullName = user.profile.name
+            //            let givenName = user.profile.givenName
+            //            let familyName = user.profile.familyName
+            //            let email = user.profile.email
+            // ...
+            
+            NotificationCenter.default.post(
+                name: Notification.Name(rawValue: "ToggleAuthUINotification"),
+                object: nil,
+                userInfo: ["statusText": "Signed in user: \(String(describing: fullName!))"])
+        }
+    }
+    
 
     var window: UIWindow?
 
@@ -17,12 +39,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let windowScene = (scene as? UIWindowScene) else { return }
+       guard let windowScene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        let mainViewController = ViewController()
+        GIDSignIn.sharedInstance().clientID = "511259675960-sokr7c61ius868r33pktscr6ln9npuog.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().delegate = self
+        
+        var mainViewController = UIViewController()
+        
+        if (GIDSignIn.sharedInstance()?.hasPreviousSignIn())! {
+            mainViewController = ViewController()
+        } else {
+            mainViewController = LoginViewController()
+        }
+                        
         let navigationController = UINavigationController(rootViewController: mainViewController)
         
         window?.rootViewController = navigationController
