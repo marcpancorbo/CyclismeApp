@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
         // Do any additional setup after loading the view.
     }
 
 
+    @IBAction func signOut(_ sender: Any) {
+        GIDSignIn.sharedInstance()?.signOut()
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 

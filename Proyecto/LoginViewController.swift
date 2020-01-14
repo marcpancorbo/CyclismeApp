@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
     
         GIDSignIn.sharedInstance().presentingViewController = self
-               // Do any additional setup after loading the view.
+            // Do any additional setup after loading the view.
            
            NotificationCenter.default.addObserver(self,
                                                   selector: #selector(LoginViewController.receiveToggleAuthUINotification(_:)),
