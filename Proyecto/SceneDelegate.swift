@@ -8,31 +8,37 @@
 
 import UIKit
 import GoogleSignIn
+import DefaultsKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate, GIDSignInDelegate {
+    
+    var window: UIWindow?
+    let defaults = Defaults()
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             print("\(error.localizedDescription)")
         } else {
+            
             // Perform any operations on signed in user here.
             //            let userId = user.userID                  // For client-side use only!
             //            let idToken = user.authentication.idToken // Safe to send to the server
             let fullName = user.profile.name
             //            let givenName = user.profile.givenName
             //            let familyName = user.profile.familyName
-            //            let email = user.profile.email
+            let email = user.profile.email
             // ...
             
             NotificationCenter.default.post(
                 name: Notification.Name(rawValue: "ToggleAuthUINotification"),
                 object: nil,
                 userInfo: ["statusText": "Signed in user: \(String(describing: fullName!))"])
+            let userLogged = User(fullname: fullName ?? "", email: email ?? "")
+        
         }
     }
     
 
-    var window: UIWindow?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -88,7 +94,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, GIDSignInDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
 
 }
 

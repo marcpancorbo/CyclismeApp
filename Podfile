@@ -7,4 +7,5 @@ target 'Proyecto' do
 
   # Pods for Proyecto
   pod 'GoogleSignIn'
+  pod 'DefaultsKit'
 end

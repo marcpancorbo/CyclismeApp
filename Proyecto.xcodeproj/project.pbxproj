@@ -16,6 +16,7 @@
 		4936E1D823CD360800BC46A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936E1D623CD360800BC46A6 /* LoginViewController.swift */; };
 		4936E1DB23CD383300BC46A6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4936E1DA23CD383300BC46A6 /* LoginViewController.xib */; };
 		494992D623CCD2590073E67E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 494992D523CCD2590073E67E /* Default-568h@2x.png */; };
+		4969C97223CE27CD0098F692 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969C97123CE27CD0098F692 /* User.swift */; };
 		B0C09CD4CBF9B63E65452474 /* Pods_Proyecto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD5D9C8DC0D7FCD2F18B03 /* Pods_Proyecto.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		4936E1D623CD360800BC46A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4936E1DA23CD383300BC46A6 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		494992D523CCD2590073E67E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4969C97123CE27CD0098F692 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BB14A2E0A676DB6CC0254C4A /* Pods-Proyecto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proyecto.debug.xcconfig"; path = "Target Support Files/Pods-Proyecto/Pods-Proyecto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 		169872F1238D979C007DD7D1 /* Proyecto */ = {
 			isa = PBXGroup;
 			children = (
+				4969C97023CE27A00098F692 /* model */,
 				169872F2238D979C007DD7D1 /* AppDelegate.swift */,
 				169872F4238D979C007DD7D1 /* SceneDelegate.swift */,
 				16987306238D97D3007DD7D1 /* ViewController.xib */,
@@ -98,6 +101,14 @@
 				4936E1D623CD360800BC46A6 /* LoginViewController.swift */,
 			);
 			path = Proyecto;
+			sourceTree = "<group>";
+		};
+		4969C97023CE27A00098F692 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				4969C97123CE27CD0098F692 /* User.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +249,7 @@
 				4936E1D823CD360800BC46A6 /* LoginViewController.swift in Sources */,
 				169872F7238D979C007DD7D1 /* ViewController.swift in Sources */,
 				169872F3238D979C007DD7D1 /* AppDelegate.swift in Sources */,
+				4969C97223CE27CD0098F692 /* User.swift in Sources */,
 				169872F5238D979C007DD7D1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

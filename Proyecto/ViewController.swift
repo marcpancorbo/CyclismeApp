@@ -20,7 +20,8 @@ class ViewController: UIViewController {
 
     @IBAction func signOut(_ sender: Any) {
         GIDSignIn.sharedInstance()?.signOut()
-        self.navigationController?.popViewController(animated: true)
+        let navigationController = UINavigationController(rootViewController: LoginViewController())
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }
 
