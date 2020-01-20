@@ -62,7 +62,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, GIDSignInDelegate {
         }
                         
         let navigationController = UINavigationController(rootViewController: mainViewController)
-        
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
@@ -93,6 +92,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, GIDSignInDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+    }
+    
+    
+    func assignRootScente(view : ViewController){
+        window?.rootViewController = view
     }
 
 }
