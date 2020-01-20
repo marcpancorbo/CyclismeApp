@@ -15,6 +15,10 @@
 		16987307238D97D3007DD7D1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16987306238D97D3007DD7D1 /* ViewController.xib */; };
 		4936E1D823CD360800BC46A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936E1D623CD360800BC46A6 /* LoginViewController.swift */; };
 		4936E1DB23CD383300BC46A6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4936E1DA23CD383300BC46A6 /* LoginViewController.xib */; };
+		493FC8DA23D6031100F17363 /* NavigatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493FC8D823D6031100F17363 /* NavigatorViewController.swift */; };
+		493FC8DB23D6031100F17363 /* NavigatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493FC8D923D6031100F17363 /* NavigatorViewController.xib */; };
+		493FC8E423D609D400F17363 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493FC8E223D609D400F17363 /* CustomViewCell.swift */; };
+		493FC8E523D609D400F17363 /* CustomViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493FC8E323D609D400F17363 /* CustomViewCell.xib */; };
 		494992D623CCD2590073E67E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 494992D523CCD2590073E67E /* Default-568h@2x.png */; };
 		4969C97223CE27CD0098F692 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969C97123CE27CD0098F692 /* User.swift */; };
 		B0C09CD4CBF9B63E65452474 /* Pods_Proyecto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD5D9C8DC0D7FCD2F18B03 /* Pods_Proyecto.framework */; };
@@ -33,6 +37,10 @@
 		1D72F324F36A49F0C164564D /* Pods-Proyecto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proyecto.release.xcconfig"; path = "Target Support Files/Pods-Proyecto/Pods-Proyecto.release.xcconfig"; sourceTree = "<group>"; };
 		4936E1D623CD360800BC46A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4936E1DA23CD383300BC46A6 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		493FC8D823D6031100F17363 /* NavigatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorViewController.swift; sourceTree = "<group>"; };
+		493FC8D923D6031100F17363 /* NavigatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigatorViewController.xib; sourceTree = "<group>"; };
+		493FC8E223D609D400F17363 /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
+		493FC8E323D609D400F17363 /* CustomViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewCell.xib; sourceTree = "<group>"; };
 		494992D523CCD2590073E67E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4969C97123CE27CD0098F692 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BB14A2E0A676DB6CC0254C4A /* Pods-Proyecto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proyecto.debug.xcconfig"; path = "Target Support Files/Pods-Proyecto/Pods-Proyecto.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,18 +97,38 @@
 		169872F1238D979C007DD7D1 /* Proyecto */ = {
 			isa = PBXGroup;
 			children = (
+				493FC8DD23D605B200F17363 /* controller */,
+				493FC8DC23D605A300F17363 /* view */,
 				4969C97023CE27A00098F692 /* model */,
 				169872F2238D979C007DD7D1 /* AppDelegate.swift */,
 				169872F4238D979C007DD7D1 /* SceneDelegate.swift */,
-				16987306238D97D3007DD7D1 /* ViewController.xib */,
-				169872F6238D979C007DD7D1 /* ViewController.swift */,
 				169872FB238D979F007DD7D1 /* Assets.xcassets */,
 				169872FD238D979F007DD7D1 /* LaunchScreen.storyboard */,
 				16987300238D979F007DD7D1 /* Info.plist */,
-				4936E1DA23CD383300BC46A6 /* LoginViewController.xib */,
-				4936E1D623CD360800BC46A6 /* LoginViewController.swift */,
 			);
 			path = Proyecto;
+			sourceTree = "<group>";
+		};
+		493FC8DC23D605A300F17363 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				16987306238D97D3007DD7D1 /* ViewController.xib */,
+				4936E1DA23CD383300BC46A6 /* LoginViewController.xib */,
+				493FC8E323D609D400F17363 /* CustomViewCell.xib */,
+				493FC8D923D6031100F17363 /* NavigatorViewController.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		493FC8DD23D605B200F17363 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				493FC8D823D6031100F17363 /* NavigatorViewController.swift */,
+				4936E1D623CD360800BC46A6 /* LoginViewController.swift */,
+				169872F6238D979C007DD7D1 /* ViewController.swift */,
+				493FC8E223D609D400F17363 /* CustomViewCell.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		4969C97023CE27A00098F692 /* model */ = {
@@ -176,6 +204,8 @@
 				169872FF238D979F007DD7D1 /* LaunchScreen.storyboard in Resources */,
 				494992D623CCD2590073E67E /* Default-568h@2x.png in Resources */,
 				16987307238D97D3007DD7D1 /* ViewController.xib in Resources */,
+				493FC8DB23D6031100F17363 /* NavigatorViewController.xib in Resources */,
+				493FC8E523D609D400F17363 /* CustomViewCell.xib in Resources */,
 				169872FC238D979F007DD7D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493FC8DA23D6031100F17363 /* NavigatorViewController.swift in Sources */,
 				4936E1D823CD360800BC46A6 /* LoginViewController.swift in Sources */,
+				493FC8E423D609D400F17363 /* CustomViewCell.swift in Sources */,
 				169872F7238D979C007DD7D1 /* ViewController.swift in Sources */,
 				169872F3238D979C007DD7D1 /* AppDelegate.swift in Sources */,
 				4969C97223CE27CD0098F692 /* User.swift in Sources */,
