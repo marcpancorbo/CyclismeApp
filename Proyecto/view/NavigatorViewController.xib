@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigatorViewController" customModule="Proyecto" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="g1l-Kp-eLx" id="yze-vm-yQO"/>
+                <outlet property="tableView" destination="g1l-Kp-eLx" id="9IO-L2-jbC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -32,8 +32,8 @@ class NavigatorViewController: UIViewController, UITableViewDataSource, UITableV
            
          let cell = UITableViewCell()
           guard let customCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as? CustomViewCell else { return cell }
-            customCell.event.text = "Ciclismo"
-            customCell.eventDescription.text = "Descripción"
+        customCell.event.text = "Ciclismo"
+        customCell.eventDescription.text = "Descripción"
            return customCell
 
        }

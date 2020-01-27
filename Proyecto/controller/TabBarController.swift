@@ -30,7 +30,7 @@ class TabBarController: UITabBarController {
         tabBar.layer.shadowOpacity = 1
         
         
-        let mainVC = ViewController(nibName: String(describing: ViewController.self), bundle: nil);
+        let mainVC = NavigatorViewController(nibName: String(describing: NavigatorViewController.self), bundle: nil);
         let mainNavigationController = UINavigationController(rootViewController: mainVC)
         mainVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "bike"), tag: 0)
         
