@@ -105,7 +105,6 @@
 		169872F1238D979C007DD7D1 /* Proyecto */ = {
 			isa = PBXGroup;
 			children = (
-				7FFD610A23D61C5300439605 /* Workers */,
 				493FC8DD23D605B200F17363 /* controller */,
 				493FC8DC23D605A300F17363 /* view */,
 				4969C97023CE27A00098F692 /* model */,
@@ -135,6 +134,8 @@
 			children = (
 				7FFD610F23D61D6A00439605 /* PerfilViewController.swift */,
 				493FC8D823D6031100F17363 /* NavigatorViewController.swift */,
+				7FFD610B23D61C8300439605 /* TabBarController.swift */,
+				7FFD610D23D61CA100439605 /* ThemeManager.swift */,
 				4936E1D623CD360800BC46A6 /* LoginViewController.swift */,
 				169872F6238D979C007DD7D1 /* ViewController.swift */,
 				493FC8E223D609D400F17363 /* CustomViewCell.swift */,
@@ -148,15 +149,6 @@
 				4969C97123CE27CD0098F692 /* User.swift */,
 			);
 			path = model;
-			sourceTree = "<group>";
-		};
-		7FFD610A23D61C5300439605 /* Workers */ = {
-			isa = PBXGroup;
-			children = (
-				7FFD610B23D61C8300439605 /* TabBarController.swift */,
-				7FFD610D23D61CA100439605 /* ThemeManager.swift */,
-			);
-			path = Workers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
