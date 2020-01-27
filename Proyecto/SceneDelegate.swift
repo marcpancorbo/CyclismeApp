@@ -56,7 +56,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, GIDSignInDelegate {
         var mainViewController = UIViewController()
         
         if (GIDSignIn.sharedInstance()?.hasPreviousSignIn())! {
-            mainViewController = ViewController()
+            mainViewController = NavigatorViewController()
         } else {
             mainViewController = LoginViewController()
         }

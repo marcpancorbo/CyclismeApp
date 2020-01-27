@@ -11,18 +11,14 @@ import UIKit
 class NavigatorViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .blue
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "CustomViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
         tableView.allowsSelection = true
-        tableView.tableFooterView = UIView()
         tableView.separatorColor = .gray
-        tableView.separatorInset.left = 0
         tableView.backgroundColor = .white
         // Do any additional setup after loading the view.
     }
@@ -36,11 +32,13 @@ class NavigatorViewController: UIViewController, UITableViewDataSource, UITableV
            
          let cell = UITableViewCell()
           guard let customCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as? CustomViewCell else { return cell }
+            customCell.event.text = "Ciclismo"
+            customCell.eventDescription.text = "Descripción"
            return customCell
 
        }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-      return 120
+        return 120.0
     }
 
     /*
