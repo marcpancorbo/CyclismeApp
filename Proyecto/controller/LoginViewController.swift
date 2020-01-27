@@ -26,8 +26,8 @@ class LoginViewController: UIViewController {
            
            @objc func receiveToggleAuthUINotification(_ notification: NSNotification) {
                print(notification.userInfo!)
-               let viewController = ViewController(nibName:String(describing: ViewController.self), bundle: nil)
-               navigationController?.pushViewController(viewController, animated: true)
+//             let viewController = TabBarController(nibName:String(describing: TabBarController.self), bundle: nil)
+               navigationController?.pushViewController(TabBarController(), animated: true)
            }
         // Do any additional setup after loading the view.
     }

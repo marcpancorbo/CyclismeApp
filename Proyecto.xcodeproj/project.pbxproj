@@ -21,6 +21,10 @@
 		493FC8E523D609D400F17363 /* CustomViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493FC8E323D609D400F17363 /* CustomViewCell.xib */; };
 		494992D623CCD2590073E67E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 494992D523CCD2590073E67E /* Default-568h@2x.png */; };
 		4969C97223CE27CD0098F692 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969C97123CE27CD0098F692 /* User.swift */; };
+		7FFD610C23D61C8300439605 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD610B23D61C8300439605 /* TabBarController.swift */; };
+		7FFD610E23D61CA100439605 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD610D23D61CA100439605 /* ThemeManager.swift */; };
+		7FFD611123D61D6A00439605 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD610F23D61D6A00439605 /* PerfilViewController.swift */; };
+		7FFD611223D61D6A00439605 /* PerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FFD611023D61D6A00439605 /* PerfilViewController.xib */; };
 		B0C09CD4CBF9B63E65452474 /* Pods_Proyecto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD5D9C8DC0D7FCD2F18B03 /* Pods_Proyecto.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +47,10 @@
 		493FC8E323D609D400F17363 /* CustomViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewCell.xib; sourceTree = "<group>"; };
 		494992D523CCD2590073E67E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4969C97123CE27CD0098F692 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7FFD610B23D61C8300439605 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		7FFD610D23D61CA100439605 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		7FFD610F23D61D6A00439605 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		7FFD611023D61D6A00439605 /* PerfilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilViewController.xib; sourceTree = "<group>"; };
 		BB14A2E0A676DB6CC0254C4A /* Pods-Proyecto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proyecto.debug.xcconfig"; path = "Target Support Files/Pods-Proyecto/Pods-Proyecto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +105,7 @@
 		169872F1238D979C007DD7D1 /* Proyecto */ = {
 			isa = PBXGroup;
 			children = (
+				7FFD610A23D61C5300439605 /* Workers */,
 				493FC8DD23D605B200F17363 /* controller */,
 				493FC8DC23D605A300F17363 /* view */,
 				4969C97023CE27A00098F692 /* model */,
@@ -112,6 +121,7 @@
 		493FC8DC23D605A300F17363 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				7FFD611023D61D6A00439605 /* PerfilViewController.xib */,
 				16987306238D97D3007DD7D1 /* ViewController.xib */,
 				4936E1DA23CD383300BC46A6 /* LoginViewController.xib */,
 				493FC8E323D609D400F17363 /* CustomViewCell.xib */,
@@ -123,6 +133,7 @@
 		493FC8DD23D605B200F17363 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				7FFD610F23D61D6A00439605 /* PerfilViewController.swift */,
 				493FC8D823D6031100F17363 /* NavigatorViewController.swift */,
 				4936E1D623CD360800BC46A6 /* LoginViewController.swift */,
 				169872F6238D979C007DD7D1 /* ViewController.swift */,
@@ -137,6 +148,15 @@
 				4969C97123CE27CD0098F692 /* User.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		7FFD610A23D61C5300439605 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				7FFD610B23D61C8300439605 /* TabBarController.swift */,
+				7FFD610D23D61CA100439605 /* ThemeManager.swift */,
+			);
+			path = Workers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +222,7 @@
 			files = (
 				4936E1DB23CD383300BC46A6 /* LoginViewController.xib in Resources */,
 				169872FF238D979F007DD7D1 /* LaunchScreen.storyboard in Resources */,
+				7FFD611223D61D6A00439605 /* PerfilViewController.xib in Resources */,
 				494992D623CCD2590073E67E /* Default-568h@2x.png in Resources */,
 				16987307238D97D3007DD7D1 /* ViewController.xib in Resources */,
 				493FC8DB23D6031100F17363 /* NavigatorViewController.xib in Resources */,
@@ -277,9 +298,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				493FC8DA23D6031100F17363 /* NavigatorViewController.swift in Sources */,
+				7FFD610C23D61C8300439605 /* TabBarController.swift in Sources */,
 				4936E1D823CD360800BC46A6 /* LoginViewController.swift in Sources */,
 				493FC8E423D609D400F17363 /* CustomViewCell.swift in Sources */,
+				7FFD611123D61D6A00439605 /* PerfilViewController.swift in Sources */,
 				169872F7238D979C007DD7D1 /* ViewController.swift in Sources */,
+				7FFD610E23D61CA100439605 /* ThemeManager.swift in Sources */,
 				169872F3238D979C007DD7D1 /* AppDelegate.swift in Sources */,
 				4969C97223CE27CD0098F692 /* User.swift in Sources */,
 				169872F5238D979C007DD7D1 /* SceneDelegate.swift in Sources */,
