@@ -23,6 +23,7 @@
 		4969C97223CE27CD0098F692 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969C97123CE27CD0098F692 /* User.swift */; };
 		7F90473723DF428E00ABDE3A /* CiclistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F90473523DF428E00ABDE3A /* CiclistasViewController.swift */; };
 		7F90473823DF428E00ABDE3A /* CiclistasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F90473623DF428E00ABDE3A /* CiclistasViewController.xib */; };
+		7F90473A23DF4A3800ABDE3A /* Cyclist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F90473923DF4A3800ABDE3A /* Cyclist.swift */; };
 		7FFD610C23D61C8300439605 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD610B23D61C8300439605 /* TabBarController.swift */; };
 		7FFD610E23D61CA100439605 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD610D23D61CA100439605 /* ThemeManager.swift */; };
 		7FFD611123D61D6A00439605 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD610F23D61D6A00439605 /* PerfilViewController.swift */; };
@@ -51,6 +52,7 @@
 		4969C97123CE27CD0098F692 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7F90473523DF428E00ABDE3A /* CiclistasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiclistasViewController.swift; sourceTree = "<group>"; };
 		7F90473623DF428E00ABDE3A /* CiclistasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CiclistasViewController.xib; sourceTree = "<group>"; };
+		7F90473923DF4A3800ABDE3A /* Cyclist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cyclist.swift; sourceTree = "<group>"; };
 		7FFD610B23D61C8300439605 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		7FFD610D23D61CA100439605 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		7FFD610F23D61D6A00439605 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				4969C97123CE27CD0098F692 /* User.swift */,
+				7F90473923DF4A3800ABDE3A /* Cyclist.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				169872F3238D979C007DD7D1 /* AppDelegate.swift in Sources */,
 				4969C97223CE27CD0098F692 /* User.swift in Sources */,
 				169872F5238D979C007DD7D1 /* SceneDelegate.swift in Sources */,
+				7F90473A23DF4A3800ABDE3A /* Cyclist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

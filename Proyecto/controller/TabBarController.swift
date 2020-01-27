@@ -36,13 +36,18 @@ class TabBarController: UITabBarController {
         
         let perfilVC = PerfilViewController()
         let perfilNavigationController = UINavigationController(rootViewController: perfilVC)
-        perfilVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "helmet"), tag: 2)
+        perfilVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "helmet"), tag: 3)
         
         let ciclistasVC = CiclistasViewController()
         let ciclistaslNavigationController = UINavigationController(rootViewController: ciclistasVC)
         ciclistasVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "bike"), tag: 1)
         
-        let controllers = [mainVC, ciclistasVC, perfilVC]
+        let equiposVC = ViewController()
+        let equiposlNavigationController = UINavigationController(rootViewController: equiposVC)
+        equiposVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "group"), tag: 2)
+        
+        
+        let controllers = [mainVC, ciclistasVC, equiposVC, perfilVC]
         
         /*Añadir dinamicamente una opcion al tabbar
         if UserDefaults.standard.bool(forKey: Constants.KCompanyAccount) {
