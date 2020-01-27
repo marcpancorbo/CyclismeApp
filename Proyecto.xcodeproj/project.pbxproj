@@ -21,6 +21,8 @@
 		493FC8E523D609D400F17363 /* CustomViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493FC8E323D609D400F17363 /* CustomViewCell.xib */; };
 		494992D623CCD2590073E67E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 494992D523CCD2590073E67E /* Default-568h@2x.png */; };
 		4969C97223CE27CD0098F692 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969C97123CE27CD0098F692 /* User.swift */; };
+		7F90473723DF428E00ABDE3A /* CiclistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F90473523DF428E00ABDE3A /* CiclistasViewController.swift */; };
+		7F90473823DF428E00ABDE3A /* CiclistasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F90473623DF428E00ABDE3A /* CiclistasViewController.xib */; };
 		7FFD610C23D61C8300439605 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD610B23D61C8300439605 /* TabBarController.swift */; };
 		7FFD610E23D61CA100439605 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD610D23D61CA100439605 /* ThemeManager.swift */; };
 		7FFD611123D61D6A00439605 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD610F23D61D6A00439605 /* PerfilViewController.swift */; };
@@ -47,6 +49,8 @@
 		493FC8E323D609D400F17363 /* CustomViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewCell.xib; sourceTree = "<group>"; };
 		494992D523CCD2590073E67E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4969C97123CE27CD0098F692 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7F90473523DF428E00ABDE3A /* CiclistasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiclistasViewController.swift; sourceTree = "<group>"; };
+		7F90473623DF428E00ABDE3A /* CiclistasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CiclistasViewController.xib; sourceTree = "<group>"; };
 		7FFD610B23D61C8300439605 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		7FFD610D23D61CA100439605 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		7FFD610F23D61D6A00439605 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 		493FC8DC23D605A300F17363 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				7F90473623DF428E00ABDE3A /* CiclistasViewController.xib */,
 				7FFD611023D61D6A00439605 /* PerfilViewController.xib */,
 				16987306238D97D3007DD7D1 /* ViewController.xib */,
 				4936E1DA23CD383300BC46A6 /* LoginViewController.xib */,
@@ -139,6 +144,7 @@
 				4936E1D623CD360800BC46A6 /* LoginViewController.swift */,
 				169872F6238D979C007DD7D1 /* ViewController.swift */,
 				493FC8E223D609D400F17363 /* CustomViewCell.swift */,
+				7F90473523DF428E00ABDE3A /* CiclistasViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 				16987307238D97D3007DD7D1 /* ViewController.xib in Resources */,
 				493FC8DB23D6031100F17363 /* NavigatorViewController.xib in Resources */,
 				493FC8E523D609D400F17363 /* CustomViewCell.xib in Resources */,
+				7F90473823DF428E00ABDE3A /* CiclistasViewController.xib in Resources */,
 				169872FC238D979F007DD7D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F90473723DF428E00ABDE3A /* CiclistasViewController.swift in Sources */,
 				493FC8DA23D6031100F17363 /* NavigatorViewController.swift in Sources */,
 				7FFD610C23D61C8300439605 /* TabBarController.swift in Sources */,
 				4936E1D823CD360800BC46A6 /* LoginViewController.swift in Sources */,

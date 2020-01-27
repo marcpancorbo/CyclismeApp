@@ -30,15 +30,19 @@ class TabBarController: UITabBarController {
         tabBar.layer.shadowOpacity = 1
         
         
-        let mainVC = ViewController(nibName: String(describing: ViewController.self), bundle: nil);
+        let mainVC = NavigatorViewController(nibName: String(describing: NavigatorViewController.self), bundle: nil);
         let mainNavigationController = UINavigationController(rootViewController: mainVC)
-        mainVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "bike"), tag: 0)
+        mainVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "event"), tag: 0)
         
         let perfilVC = PerfilViewController()
         let perfilNavigationController = UINavigationController(rootViewController: perfilVC)
-        perfilVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "helmet"), tag: 1)
+        perfilVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "helmet"), tag: 2)
         
-        let controllers = [mainVC, perfilVC]
+        let ciclistasVC = CiclistasViewController()
+        let ciclistaslNavigationController = UINavigationController(rootViewController: ciclistasVC)
+        ciclistasVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "bike"), tag: 1)
+        
+        let controllers = [mainVC, ciclistasVC, perfilVC]
         
         /*Añadir dinamicamente una opcion al tabbar
         if UserDefaults.standard.bool(forKey: Constants.KCompanyAccount) {
