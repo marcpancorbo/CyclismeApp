@@ -7,11 +7,12 @@
 //
 
 import UIKit
-
+import RealmSwift
 class NavigatorViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-    
+    private var manager = BBDDManager.getInstance()
+    private var raceResult : Results<Race>? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -20,20 +21,22 @@ class NavigatorViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.allowsSelection = true
         tableView.separatorColor = .gray
         tableView.backgroundColor = .white
+        self.raceResult = manager.findRaces()
         // Do any additional setup after loading the view.
     }
 
     
        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           return 8
-       }
+        return raceResult?.count ?? 2
+        
+    }
        
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
            
          let cell = UITableViewCell()
           guard let customCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as? CustomViewCell else { return cell }
-        customCell.event.text = "Ciclismo"
-        customCell.eventDescription.text = "Descripción"
+        customCell.event.text = raceResult![indexPath.row].name
+        customCell.eventDescription.text = raceResult![indexPath.row].description
            return customCell
 
        }

@@ -10,9 +10,10 @@ import UIKit
 import Foundation
 
 class TabBarController: UITabBarController {
-    
+    private var manager = BBDDManager.getInstance()
     override func viewDidLoad() {
         super.viewDidLoad()
+        manager.initBBDD()
     }
         
     override func viewWillAppear(_ animated: Bool) {

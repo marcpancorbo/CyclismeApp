@@ -11,9 +11,9 @@ import RealmSwift
 
 class BBDDManager {
     public static var bbddManager = BBDDManager()
-    private let realm = try! Realm()
+    private let realm = try! Realm(configuration: Realm.Configuration())
     private init(){
-        
+       
     }
     public static func getInstance() -> BBDDManager {
         return bbddManager;
@@ -25,6 +25,20 @@ class BBDDManager {
     }
     public func findRaces() -> Results<Race>{
         return realm.objects(Race.self)
+    }
+    public func initBBDD(){
+        var race1 = Race()
+        var race2 = Race()
+        var race3 = Race()
+        race1.name = "Race1"
+        race1.raceDescription = "AAA"
+        race2.name = "Race2"
+        race2.raceDescription = "BBBB"
+        race3.name = "Race3"
+        race3.raceDescription = "CCC"
+        storeRace(race: race1)
+        storeRace(race: race2)
+        storeRace(race: race3)
     }
 
 }
