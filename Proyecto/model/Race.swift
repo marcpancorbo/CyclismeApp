@@ -7,16 +7,17 @@
 //
 
 import Foundation
+import RealmSwift
 
-class Event {
-    private var image : String;
-    private var name : String;
-    private var popularity : Int;
-    private var country : String;
-    private var roads : Int;
-    private var kilometers : Int;
+class Race : Object{
+     dynamic var image : String = "";
+     dynamic var name : String = "";
+     dynamic var popularity : Int = 0;
+     dynamic var country : String = "";
+     dynamic var roads : Int = 0;
+     dynamic var kilometers : Int = 0;
     
-    init(name : String, popularity : Int, ) {
-        <#statements#>
+    
+    required init() {
     }
 }

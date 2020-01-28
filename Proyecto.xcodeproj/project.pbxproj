@@ -21,6 +21,8 @@
 		493FC8E523D609D400F17363 /* CustomViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493FC8E323D609D400F17363 /* CustomViewCell.xib */; };
 		494992D623CCD2590073E67E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 494992D523CCD2590073E67E /* Default-568h@2x.png */; };
 		4969C97223CE27CD0098F692 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969C97123CE27CD0098F692 /* User.swift */; };
+		49D0832A23E03BF500DDC107 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D0832923E03BF500DDC107 /* Race.swift */; };
+		49D0832C23E03C0800DDC107 /* BBDDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D0832B23E03C0800DDC107 /* BBDDManager.swift */; };
 		7F90473723DF428E00ABDE3A /* CiclistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F90473523DF428E00ABDE3A /* CiclistasViewController.swift */; };
 		7F90473823DF428E00ABDE3A /* CiclistasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F90473623DF428E00ABDE3A /* CiclistasViewController.xib */; };
 		7F90473A23DF4A3800ABDE3A /* Cyclist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F90473923DF4A3800ABDE3A /* Cyclist.swift */; };
@@ -50,6 +52,8 @@
 		493FC8E323D609D400F17363 /* CustomViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewCell.xib; sourceTree = "<group>"; };
 		494992D523CCD2590073E67E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4969C97123CE27CD0098F692 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		49D0832923E03BF500DDC107 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Race.swift; path = /Users/marc/Documents/SwiftProyect/ProyectoSwift/Proyecto/model/Race.swift; sourceTree = "<absolute>"; };
+		49D0832B23E03C0800DDC107 /* BBDDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BBDDManager.swift; path = /Users/marc/Documents/SwiftProyect/ProyectoSwift/Proyecto/controller/BBDDManager.swift; sourceTree = "<absolute>"; };
 		7F90473523DF428E00ABDE3A /* CiclistasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiclistasViewController.swift; sourceTree = "<group>"; };
 		7F90473623DF428E00ABDE3A /* CiclistasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CiclistasViewController.xib; sourceTree = "<group>"; };
 		7F90473923DF4A3800ABDE3A /* Cyclist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cyclist.swift; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 		493FC8DD23D605B200F17363 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				49D0832B23E03C0800DDC107 /* BBDDManager.swift */,
 				7FFD610F23D61D6A00439605 /* PerfilViewController.swift */,
 				493FC8D823D6031100F17363 /* NavigatorViewController.swift */,
 				7FFD610B23D61C8300439605 /* TabBarController.swift */,
@@ -154,6 +159,7 @@
 		4969C97023CE27A00098F692 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				49D0832923E03BF500DDC107 /* Race.swift */,
 				4969C97123CE27CD0098F692 /* User.swift */,
 				7F90473923DF4A3800ABDE3A /* Cyclist.swift */,
 			);
@@ -304,11 +310,13 @@
 				7FFD610C23D61C8300439605 /* TabBarController.swift in Sources */,
 				4936E1D823CD360800BC46A6 /* LoginViewController.swift in Sources */,
 				493FC8E423D609D400F17363 /* CustomViewCell.swift in Sources */,
+				49D0832A23E03BF500DDC107 /* Race.swift in Sources */,
 				7FFD611123D61D6A00439605 /* PerfilViewController.swift in Sources */,
 				169872F7238D979C007DD7D1 /* ViewController.swift in Sources */,
 				7FFD610E23D61CA100439605 /* ThemeManager.swift in Sources */,
 				169872F3238D979C007DD7D1 /* AppDelegate.swift in Sources */,
 				4969C97223CE27CD0098F692 /* User.swift in Sources */,
+				49D0832C23E03C0800DDC107 /* BBDDManager.swift in Sources */,
 				169872F5238D979C007DD7D1 /* SceneDelegate.swift in Sources */,
 				7F90473A23DF4A3800ABDE3A /* Cyclist.swift in Sources */,
 			);
