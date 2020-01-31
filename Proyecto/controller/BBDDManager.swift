@@ -29,16 +29,20 @@ class BBDDManager {
     public func initBBDD(){
         var race1 = Race()
         var race2 = Race()
-        var race3 = Race()
+        var race3 = Race() 
+        var race4 = Race()
         race1.name = "Race1"
         race1.raceDescription = "AAA"
         race2.name = "Race2"
         race2.raceDescription = "BBBB"
         race3.name = "Race3"
         race3.raceDescription = "CCC"
+        race4.name = "Race4"
+        race4.raceDescription = "DDDD"
         storeRace(race: race1)
         storeRace(race: race2)
         storeRace(race: race3)
+        storeRace(race: race4)
     }
 
 }
