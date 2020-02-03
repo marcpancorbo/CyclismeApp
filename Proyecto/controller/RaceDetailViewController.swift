@@ -26,8 +26,9 @@ class RaceDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         race = manager.getRaceByName(name: raceName)
-        titleDetail.text = race?.name
-        popularityDetail.text = String(race!.popularity)
+        titleDetail.text = "Name: "+race!.name
+        popularityDetail.text = "Popularity: "+String(race!.popularity)
+        country.text = "Country: "+race!.country
 
         // Do any additional setup after loading the view.
     }

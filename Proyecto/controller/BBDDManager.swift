@@ -41,15 +41,22 @@ class BBDDManager {
                    race1.name = "Race1"
                    race1.raceDescription = "Race in Barcelona"
                    race1.popularity = 4
+            race1.country = "Spain"
                    race2.name = "Race2"
                    race2.raceDescription = "Race in Madrid"
                 race2.popularity = 1
+            race2.country = "Spain"
+
                    race3.name = "Race3"
                    race3.raceDescription = "Race in Badajoz"
                 race3.popularity = 7
+            race3.country = "Spain"
+
                    race4.name = "Race4"
                    race4.raceDescription = "Race in Teruel"
             race4.popularity = 2
+            race4.country = "Spain"
+
                    storeRace(race: race1)
                    storeRace(race: race2)
                    storeRace(race: race3)

@@ -54,8 +54,8 @@
 		493FC8E323D609D400F17363 /* CustomViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewCell.xib; sourceTree = "<group>"; };
 		494992D523CCD2590073E67E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4969C97123CE27CD0098F692 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		49D0832923E03BF500DDC107 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Race.swift; path = /Users/marc/Documents/SwiftProyect/ProyectoSwift/Proyecto/model/Race.swift; sourceTree = "<absolute>"; };
-		49D0832B23E03C0800DDC107 /* BBDDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BBDDManager.swift; path = /Users/marc/Documents/SwiftProyect/ProyectoSwift/Proyecto/controller/BBDDManager.swift; sourceTree = "<absolute>"; };
+		49D0832923E03BF500DDC107 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		49D0832B23E03C0800DDC107 /* BBDDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBDDManager.swift; sourceTree = "<group>"; };
 		49F1046123E8715A00917F4E /* RaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailViewController.swift; sourceTree = "<group>"; };
 		49F1046223E8715A00917F4E /* RaceDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RaceDetailViewController.xib; sourceTree = "<group>"; };
 		7F90473523DF428E00ABDE3A /* CiclistasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiclistasViewController.swift; sourceTree = "<group>"; };
