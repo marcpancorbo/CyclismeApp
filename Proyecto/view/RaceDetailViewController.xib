@@ -9,6 +9,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RaceDetailViewController" customModule="Proyecto" customModuleProvider="target">
             <connections>
+                <outlet property="country" destination="VBR-yZ-cNy" id="9vp-aG-kWR"/>
+                <outlet property="imageDetail" destination="6Jj-8Q-kJS" id="myy-Wc-k2X"/>
+                <outlet property="kilometer" destination="7JT-PC-Hcp" id="xXv-Nf-kqv"/>
+                <outlet property="popularityDetail" destination="0tu-al-w98" id="Xe5-qF-pHP"/>
+                <outlet property="roads" destination="szG-bj-5ge" id="Nst-tc-Y2P"/>
+                <outlet property="titleDetail" destination="u1b-Ma-Zf8" id="NmI-xp-O71"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -50,7 +56,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1b-Ma-Zf8">
-                    <rect key="frame" x="64" y="116" width="34" height="21"/>
+                    <rect key="frame" x="64" y="112" width="68" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>

@@ -28,6 +28,10 @@ class BBDDManager {
     public func findRaces() -> Results<Race>{
         return realm.objects(Race.self).sorted(byKeyPath: "popularity", ascending: false)
     }
+    public func getRaceByName(name : String) -> Race {
+        var races = realm.objects(Race.self).filter("name = %@", name)
+        return races.first!
+    }
     public func initBBDD(){
         if (findRaces().isEmpty){
                    var race1 = Race()

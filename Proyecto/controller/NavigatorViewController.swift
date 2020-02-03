@@ -8,7 +8,11 @@
 
 import UIKit
 import RealmSwift
-class NavigatorViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class NavigatorViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, DetailDelegate {
+    func delegateMethod(text: String) {
+        
+    }
+    
     
     @IBOutlet weak var tableView: UITableView!
     private var manager = BBDDManager.getInstance()
@@ -37,13 +41,20 @@ class NavigatorViewController: UIViewController, UITableViewDataSource, UITableV
           guard let customCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as? CustomViewCell else { return cell }
         customCell.event.text = raceResult![indexPath.row].name
         customCell.eventDescription.text = "Popularity: "+String(raceResult![indexPath.row].popularity)
-           return customCell
+    
+        return customCell
 
        }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120.0
     }
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let raceDetail = RaceDetailViewController(nibName: String(describing: RaceDetailViewController.self), bundle: nil)
+        var cell = tableView.cellForRow(at: indexPath) as! CustomViewCell
+        raceDetail.delegate = self
+        raceDetail.raceName = cell.event.text!
+        navigationController?.pushViewController(raceDetail, animated: true)
+    }
     /*
     // MARK: - Navigation
 
