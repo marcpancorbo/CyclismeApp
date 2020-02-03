@@ -36,7 +36,7 @@ class NavigatorViewController: UIViewController, UITableViewDataSource, UITableV
          let cell = UITableViewCell()
           guard let customCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as? CustomViewCell else { return cell }
         customCell.event.text = raceResult![indexPath.row].name
-        customCell.eventDescription.text = raceResult![indexPath.row].description
+        customCell.eventDescription.text = "Popularity: "+String(raceResult![indexPath.row].popularity)
            return customCell
 
        }
