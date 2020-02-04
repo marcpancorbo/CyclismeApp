@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import RealmSwift
 
 class CiclistasViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
     @IBOutlet weak var tableView: UITableView!
-    
+    private var manager = BBDDManager.getInstance()
+    private var cyclistResult : Results<Cyclist>? = nil
+
      override func viewDidLoad() {
            super.viewDidLoad()
            tableView.delegate = self
@@ -20,21 +23,27 @@ class CiclistasViewController: UIViewController, UITableViewDataSource, UITableV
            tableView.allowsSelection = true
            tableView.separatorColor = .gray
            tableView.backgroundColor = .white
+           self.cyclistResult = manager.findCyclist()
+
            // Do any additional setup after loading the view.
        }
 
        
           func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-              return 5
+              return cyclistResult?.count ?? 2
           }
           
           func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
               
             let cell = UITableViewCell()
              guard let customCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as? CyclistNewViewCell else { return cell }
-           customCell.nameCyclist.text = "Nombre"
-           customCell.popuCyclist.text = "Popularidad"
-           customCell.isLeader.text = "Leader"
+           customCell.nameCyclist.text = cyclistResult![indexPath.row].firstname
+           customCell.popuCyclist.text = "Popularity: "+String(cyclistResult![indexPath.row].popularity)
+            if(cyclistResult![indexPath.row].leader){
+                customCell.isLeader.text = "Leader"
+            }else{
+                customCell.isLeader.alpha = 0
+            }
            customCell.imageCyclist.image = UIImage(named: "imageCyclist")
               return customCell
 
