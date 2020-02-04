@@ -16,7 +16,7 @@ class CiclistasViewController: UIViewController, UITableViewDataSource, UITableV
            super.viewDidLoad()
            tableView.delegate = self
            tableView.dataSource = self
-           tableView.register(UINib(nibName: "CyclistViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
+           tableView.register(UINib(nibName: "CyclistNewViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
            tableView.allowsSelection = true
            tableView.separatorColor = .gray
            tableView.backgroundColor = .white
@@ -31,7 +31,7 @@ class CiclistasViewController: UIViewController, UITableViewDataSource, UITableV
           func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
               
             let cell = UITableViewCell()
-             guard let customCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as? CyclistViewCell else { return cell }
+             guard let customCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as? CyclistNewViewCell else { return cell }
            customCell.nameCyclist.text = "Nombre"
            customCell.popuCyclist.text = "Popularidad"
            customCell.isLeader.text = "Leader"
