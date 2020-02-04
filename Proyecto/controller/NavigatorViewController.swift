@@ -13,7 +13,6 @@ class NavigatorViewController: UIViewController, UITableViewDataSource, UITableV
         
     }
     
-    
     @IBOutlet weak var tableView: UITableView!
     private var manager = BBDDManager.getInstance()
     private var raceResult : Results<Race>? = nil

@@ -8,11 +8,13 @@
 
 import UIKit
 import RealmSwift
+import Floaty
 
 class CiclistasViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
     @IBOutlet weak var tableView: UITableView!
     private var manager = BBDDManager.getInstance()
+    private let button = Floaty()
     private var cyclistResult : Results<Cyclist>? = nil
 
      override func viewDidLoad() {
@@ -24,6 +26,10 @@ class CiclistasViewController: UIViewController, UITableViewDataSource, UITableV
            tableView.separatorColor = .gray
            tableView.backgroundColor = .white
            self.cyclistResult = manager.findCyclist()
+        button.addItem("New Cyclist", icon: UIImage(named: "bike"))
+        button.openAnimationType = FloatyOpenAnimationType.pop
+        self.view.addSubview(button)
+
 
            // Do any additional setup after loading the view.
        }
