@@ -8,18 +8,18 @@
 
 import UIKit
 import GoogleSignIn
-
+import RealmSwift
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return teamResult?.count ?? 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         guard let customCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as? TeamViewCell else { return cell }
-        customCell.teamName.text = "Team"
-        customCell.teamCountry.text = "Country"
-        customCell.teamManager.text = "Manager"
+        customCell.teamName.text = "Team: "+teamResult![indexPath.row].name
+        customCell.teamCountry.text = "Country: "+teamResult![indexPath.row].country
+        customCell.teamManager.text = "Manager: "+teamResult![indexPath.row].manager
         return customCell
     }
     
@@ -28,7 +28,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @IBOutlet weak var teamTableView: UITableView!
-    
+    private var manager = BBDDManager.getInstance()
+    private var teamResult : Results<Team>? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -38,6 +39,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         teamTableView.allowsSelection = true
         teamTableView.separatorColor = .gray
         teamTableView.backgroundColor = .white
+        self.teamResult = manager.findTeams()
         // Do any additional setup after loading the view.
     }
 

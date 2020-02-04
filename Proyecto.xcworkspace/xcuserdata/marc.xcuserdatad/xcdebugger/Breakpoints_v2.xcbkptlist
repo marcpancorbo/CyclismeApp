@@ -78,8 +78,8 @@
             filePath = "Proyecto/controller/BBDDManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "initBBDD()"
             landmarkType = "7">
          </BreakpointContent>

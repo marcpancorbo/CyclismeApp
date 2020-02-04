@@ -20,13 +20,16 @@ class BBDDManager {
     public static func getInstance() -> BBDDManager {
         return bbddManager;
     }
-    public func storeRace(race: Race){
+    public func store(race: Object){
         try! realm.write {
             realm.add(race)
         }
     }
     public func findRaces() -> Results<Race>{
         return realm.objects(Race.self).sorted(byKeyPath: "popularity", ascending: false)
+    }
+    public func findTeams() -> Results<Team>{
+        return realm.objects(Team.self)
     }
     public func getRaceByName(name : String) -> Race {
         var races = realm.objects(Race.self).filter("name = %@", name)
@@ -62,10 +65,30 @@ class BBDDManager {
             race4.country = "Spain"
             race4.roads = 2
             race4.kilometers = 500
-            storeRace(race: race1)
-            storeRace(race: race2)
-            storeRace(race: race3)
-            storeRace(race: race4)
+            store(race: race1)
+            store(race: race2)
+            store(race: race3)
+            store(race: race4)
+            var team1 = Team()
+            var team2 = Team()
+            var team3 = Team()
+            var team4 = Team()
+            team1.name = "Team 1"
+            team1.manager = "Pepe"
+            team1.country = "England"
+            team2.name = "Team 2"
+            team2.manager = "Arnau"
+            team2.country = "Spain"
+            team3.name = "Team 3"
+            team3.manager = "Marc"
+            team3.country = "Deutschland"
+            team4.name = "Team 4"
+            team4.manager = "Luis"
+            team4.country = "USA"
+            store(race: team1)
+            store(race: team2)
+            store(race: team3)
+            store(race: team4)
         }
     }
     
