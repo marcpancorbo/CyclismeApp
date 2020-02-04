@@ -34,34 +34,39 @@ class BBDDManager {
     }
     public func initBBDD(){
         if (findRaces().isEmpty){
-                   var race1 = Race()
-                   var race2 = Race()
-                   var race3 = Race()
-                   var race4 = Race()
-                   race1.name = "Race1"
-                   race1.raceDescription = "Race in Barcelona"
-                   race1.popularity = 4
+            var race1 = Race()
+            var race2 = Race()
+            var race3 = Race()
+            var race4 = Race()
+            race1.name = "Race1"
+            race1.raceDescription = "Race in Barcelona"
+            race1.popularity = 4
             race1.country = "Spain"
-                   race2.name = "Race2"
-                   race2.raceDescription = "Race in Madrid"
-                race2.popularity = 1
+            race1.roads = 3
+            race1.kilometers = 200
+            race2.name = "Race2"
+            race2.raceDescription = "Race in Madrid"
+            race2.popularity = 1
             race2.country = "Spain"
-
-                   race3.name = "Race3"
-                   race3.raceDescription = "Race in Badajoz"
-                race3.popularity = 7
+            race2.roads = 6
+            race2.kilometers = 2000
+            race3.name = "Race3"
+            race3.raceDescription = "Race in Badajoz"
+            race3.popularity = 7
             race3.country = "Spain"
-
-                   race4.name = "Race4"
-                   race4.raceDescription = "Race in Teruel"
+            race3.roads = 1
+            race3.kilometers = 100
+            race4.name = "Race4"
+            race4.raceDescription = "Race in Teruel"
             race4.popularity = 2
             race4.country = "Spain"
-
-                   storeRace(race: race1)
-                   storeRace(race: race2)
-                   storeRace(race: race3)
-                   storeRace(race: race4)
-               }
+            race4.roads = 2
+            race4.kilometers = 500
+            storeRace(race: race1)
+            storeRace(race: race2)
+            storeRace(race: race3)
+            storeRace(race: race4)
+        }
     }
-
+    
 }

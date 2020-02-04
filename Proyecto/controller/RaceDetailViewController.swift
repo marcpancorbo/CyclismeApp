@@ -29,6 +29,8 @@ class RaceDetailViewController: UIViewController {
         titleDetail.text = "Name: "+race!.name
         popularityDetail.text = "Popularity: "+String(race!.popularity)
         country.text = "Country: "+race!.country
+        roads.text = "Roads: "+String(race!.roads)
+        kilometer.text = "Kilometers: "+String(race!.kilometers)
 
         // Do any additional setup after loading the view.
     }
