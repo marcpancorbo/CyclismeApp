@@ -25,6 +25,11 @@ class BBDDManager {
             realm.add(race)
         }
     }
+    public func delete(object : Object){
+        try! realm.write {
+            realm.delete(object)
+        }
+    }
     public func findRaces() -> Results<Race>{
         return realm.objects(Race.self).sorted(byKeyPath: "popularity", ascending: false)
     }

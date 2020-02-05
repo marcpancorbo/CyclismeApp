@@ -23,6 +23,7 @@ class CiclistasViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.allowsMultipleSelectionDuringEditing = false;
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "CyclistNewViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
@@ -69,6 +70,23 @@ class CiclistasViewController: UIViewController, UITableViewDataSource, UITableV
         cyclistDetail.delegate = self
         cyclistDetail.cyclistId = cyclistResult![indexPath.row].id
         navigationController?.pushViewController(cyclistDetail, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        tableView.beginUpdates()
+        if editingStyle == .delete {
+            
+            // remove the item from the data model
+            // delete the table view row
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            var cyclist = cyclistResult![indexPath.row]
+            manager.delete(object: cyclist)
+            tableView.reloadData()
+            tableView.endUpdates()
+            
+        } else if editingStyle == .insert {
+            // Not used in our example, but if you were adding a new row, this is where you would do it.
+        }
     }
     
     
