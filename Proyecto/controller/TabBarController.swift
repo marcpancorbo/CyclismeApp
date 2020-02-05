@@ -8,12 +8,12 @@
 
 import UIKit
 import Foundation
-
 class TabBarController: UITabBarController {
     private var manager = BBDDManager.getInstance()
     override func viewDidLoad() {
         super.viewDidLoad()
         manager.initBBDD()
+
     }
         
     override func viewWillAppear(_ animated: Bool) {
@@ -24,7 +24,6 @@ class TabBarController: UITabBarController {
         tabBar.tintColor = ThemeColor.blueRibbon.HCColor
         tabBar.unselectedItemTintColor = ThemeColor.black.HCColor.withAlphaComponent(0.8)
         tabBar.isTranslucent = false
-        
         tabBar.layer.shadowOffset = CGSize(width: 0, height: 0)
         tabBar.layer.shadowRadius = 0.5
         tabBar.layer.shadowColor = UIColor.gray.cgColor
@@ -34,7 +33,6 @@ class TabBarController: UITabBarController {
         let mainVC = NavigatorViewController(nibName: String(describing: NavigatorViewController.self), bundle: nil);
         let mainNavigationController = UINavigationController(rootViewController: mainVC)
         mainVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "event"), tag: 0)
-        
         let perfilVC = PerfilViewController()
         let perfilNavigationController = UINavigationController(rootViewController: perfilVC)
         perfilVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "helmet"), tag: 3)

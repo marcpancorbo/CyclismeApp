@@ -9,4 +9,5 @@ target 'Proyecto' do
   pod 'GoogleSignIn'
   pod 'DefaultsKit'
   pod 'RealmSwift'
+  pod 'Floaty', '~> 4.2.0'
 end
