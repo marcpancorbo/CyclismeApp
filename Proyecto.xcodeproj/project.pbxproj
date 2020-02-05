@@ -12,6 +12,8 @@
 		169872F7238D979C007DD7D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169872F6238D979C007DD7D1 /* ViewController.swift */; };
 		169872FC238D979F007DD7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169872FB238D979F007DD7D1 /* Assets.xcassets */; };
 		16987307238D97D3007DD7D1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16987306238D97D3007DD7D1 /* ViewController.xib */; };
+		4929AAC723EAE2F300A6BCF5 /* icons8-edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 4929AAC623EAE2F300A6BCF5 /* icons8-edit.png */; };
+		4929AAC923EAE54F00A6BCF5 /* icons8-checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 4929AAC823EAE54F00A6BCF5 /* icons8-checkmark.png */; };
 		4936E1D823CD360800BC46A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936E1D623CD360800BC46A6 /* LoginViewController.swift */; };
 		4936E1DB23CD383300BC46A6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4936E1DA23CD383300BC46A6 /* LoginViewController.xib */; };
 		493FC8DA23D6031100F17363 /* NavigatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493FC8D823D6031100F17363 /* NavigatorViewController.swift */; };
@@ -51,6 +53,8 @@
 		16987306238D97D3007DD7D1 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		1BAD5D9C8DC0D7FCD2F18B03 /* Pods_Proyecto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proyecto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D72F324F36A49F0C164564D /* Pods-Proyecto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proyecto.release.xcconfig"; path = "Target Support Files/Pods-Proyecto/Pods-Proyecto.release.xcconfig"; sourceTree = "<group>"; };
+		4929AAC623EAE2F300A6BCF5 /* icons8-edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-edit.png"; sourceTree = "<group>"; };
+		4929AAC823EAE54F00A6BCF5 /* icons8-checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-checkmark.png"; sourceTree = "<group>"; };
 		4936E1D623CD360800BC46A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4936E1DA23CD383300BC46A6 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		493FC8D823D6031100F17363 /* NavigatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				4969C97023CE27A00098F692 /* model */,
 				169872F2238D979C007DD7D1 /* AppDelegate.swift */,
 				169872F4238D979C007DD7D1 /* SceneDelegate.swift */,
+				4929AAC823EAE54F00A6BCF5 /* icons8-checkmark.png */,
+				4929AAC623EAE2F300A6BCF5 /* icons8-edit.png */,
 				169872FB238D979F007DD7D1 /* Assets.xcassets */,
 				16987300238D979F007DD7D1 /* Info.plist */,
 			);
@@ -254,12 +260,14 @@
 				4936E1DB23CD383300BC46A6 /* LoginViewController.xib in Resources */,
 				7F608C6923E9F16600048459 /* DetailCyclistViewController.xib in Resources */,
 				7FFD611223D61D6A00439605 /* PerfilViewController.xib in Resources */,
+				4929AAC923EAE54F00A6BCF5 /* icons8-checkmark.png in Resources */,
 				7FC2AF9823E979CB003E7C21 /* CyclistNewViewCell.xib in Resources */,
 				494992D623CCD2590073E67E /* Default-568h@2x.png in Resources */,
 				16987307238D97D3007DD7D1 /* ViewController.xib in Resources */,
 				493FC8DB23D6031100F17363 /* NavigatorViewController.xib in Resources */,
 				493FC8E523D609D400F17363 /* CustomViewCell.xib in Resources */,
 				4947523523E98796004CAF95 /* TeamViewCell.xib in Resources */,
+				4929AAC723EAE2F300A6BCF5 /* icons8-edit.png in Resources */,
 				7F90473823DF428E00ABDE3A /* CiclistasViewController.xib in Resources */,
 				49F1046423E8715A00917F4E /* RaceDetailViewController.xib in Resources */,
 				169872FC238D979F007DD7D1 /* Assets.xcassets in Resources */,
