@@ -46,39 +46,47 @@ class DetailCyclistViewController: UIViewController, CyclistDelegate{
         buttonEdit.buttonImage = UIImage(named: "icons8-edit")
         buttonEdit.buttonColor = UIColor.orange
         buttonEdit.addItem(icon: nil, handler: {item in
-
+            if (self.cyclist != nil){
+                self.name.text = self.cyclist!.firstname
+                self.surname.text = self.cyclist!.lastname
+                self.country.text = self.cyclist!.country_id
+                self.speciality.text = String(self.cyclist!.specialty_id)
+                self.team.text = self.cyclist!.team_id
+                self.birthdate.text = self.cyclist!.birthdate
+                self.size.text = String(self.cyclist!.size)
+                self.weight.text = String(self.cyclist!.weight)
+                self.mountain.text = String(self.cyclist!.mountain)
+                self.plain.text = String(self.cyclist!.plain)
+                self.downhilling.text = String(self.cyclist!.downhilling)
+                self.sprint.text = String(self.cyclist!.sprint)
+                self.resistance.text = String(self.cyclist!.resistante)
+                self.recuperation.text = String(self.cyclist!.recuperation)
+                self.timetrial.text = String(self.cyclist!.timetrial)
+                
+            }
             for case let textField as UITextField in self.view.subviews{
                 textField.borderStyle = UITextField.BorderStyle.roundedRect
                 textField.isEnabled = true
             }
-            self.name.text = self.cyclist!.firstname
-            self.surname.text = self.cyclist!.lastname
-            self.country.text = self.cyclist!.country_id
-            self.speciality.text = String(self.cyclist!.specialty_id)
-            self.team.text = self.cyclist!.team_id
-            self.birthdate.text = self.cyclist!.birthdate
-            self.size.text = String(self.cyclist!.size)
-            self.weight.text = String(self.cyclist!.weight)
-            self.mountain.text = String(self.cyclist!.mountain)
-            self.plain.text = String(self.cyclist!.plain)
-            self.downhilling.text = String(self.cyclist!.downhilling)
-            self.sprint.text = String(self.cyclist!.sprint)
-            self.resistance.text = String(self.cyclist!.resistante)
-            self.recuperation.text = String(self.cyclist!.recuperation)
-            self.timetrial.text = String(self.cyclist!.timetrial)
-
-            
+            self.buttonEdit.isUserInteractionEnabled = false
+            self.buttonEdit.isHidden = true
+            self.buttonSave.isUserInteractionEnabled = true
+            self.buttonSave.isHidden = false
         })
         buttonEdit.handleFirstItemDirectly = true
-        buttonEdit.paddingX = 105
         buttonEdit.paddingY = 90
         buttonSave.buttonImage = UIImage(named: "icons8-checkmark")
         buttonSave.buttonColor = UIColor.green
         buttonSave.addItem(icon: nil, handler: {item in
-            print("save")
+            self.buttonEdit.isUserInteractionEnabled = true
+            self.buttonEdit.isHidden = false
+            self.buttonSave.isUserInteractionEnabled = false
+            self.buttonSave.isHidden = true
         })
         buttonSave.handleFirstItemDirectly = true
         buttonSave.paddingY = 90
+        buttonSave.isHidden = true
+        buttonSave.isUserInteractionEnabled = false
         view.addSubview(buttonEdit)
         view.addSubview(buttonSave)
         if (cyclistId == nil){
