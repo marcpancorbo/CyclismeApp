@@ -38,6 +38,11 @@ class BBDDManager {
         var races = realm.objects(Race.self).filter("name = %@", name)
         return races.first!
     }
+    
+    public func getCyclistById(id : Int) -> Cyclist{
+        var cyclists = realm.objects(Cyclist.self).filter("id = %@", id)
+        return cyclists.first!
+    }
     public func initBBDD(){
         if (findRaces().isEmpty){
             var race1 = Race()

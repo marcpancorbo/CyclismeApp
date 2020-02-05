@@ -37,7 +37,7 @@ class CiclistasViewController: UIViewController, UITableViewDataSource, UITableV
               
             let cell = UITableViewCell()
              guard let customCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as? CyclistNewViewCell else { return cell }
-           customCell.nameCyclist.text = cyclistResult![indexPath.row].firstname
+           customCell.nameCyclist.text = cyclistResult![indexPath.row].firstname + " " + cyclistResult![indexPath.row].lastname
            customCell.popuCyclist.text = "Popularity: "+String(cyclistResult![indexPath.row].popularity)
             if(cyclistResult![indexPath.row].leader){
                 customCell.isLeader.text = "Leader"

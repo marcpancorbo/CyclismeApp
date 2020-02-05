@@ -27,6 +27,8 @@
 		49D0832C23E03C0800DDC107 /* BBDDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D0832B23E03C0800DDC107 /* BBDDManager.swift */; };
 		49F1046323E8715A00917F4E /* RaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F1046123E8715A00917F4E /* RaceDetailViewController.swift */; };
 		49F1046423E8715A00917F4E /* RaceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F1046223E8715A00917F4E /* RaceDetailViewController.xib */; };
+		7F608C6823E9F16600048459 /* DetailCyclistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F608C6623E9F16600048459 /* DetailCyclistViewController.swift */; };
+		7F608C6923E9F16600048459 /* DetailCyclistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F608C6723E9F16600048459 /* DetailCyclistViewController.xib */; };
 		7F90473723DF428E00ABDE3A /* CiclistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F90473523DF428E00ABDE3A /* CiclistasViewController.swift */; };
 		7F90473823DF428E00ABDE3A /* CiclistasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F90473623DF428E00ABDE3A /* CiclistasViewController.xib */; };
 		7F90473A23DF4A3800ABDE3A /* Cyclist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F90473923DF4A3800ABDE3A /* Cyclist.swift */; };
@@ -64,6 +66,8 @@
 		49D0832B23E03C0800DDC107 /* BBDDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBDDManager.swift; sourceTree = "<group>"; };
 		49F1046123E8715A00917F4E /* RaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetailViewController.swift; sourceTree = "<group>"; };
 		49F1046223E8715A00917F4E /* RaceDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RaceDetailViewController.xib; sourceTree = "<group>"; };
+		7F608C6623E9F16600048459 /* DetailCyclistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCyclistViewController.swift; sourceTree = "<group>"; };
+		7F608C6723E9F16600048459 /* DetailCyclistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCyclistViewController.xib; sourceTree = "<group>"; };
 		7F90473523DF428E00ABDE3A /* CiclistasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiclistasViewController.swift; sourceTree = "<group>"; };
 		7F90473623DF428E00ABDE3A /* CiclistasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CiclistasViewController.xib; sourceTree = "<group>"; };
 		7F90473923DF4A3800ABDE3A /* Cyclist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cyclist.swift; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 				493FC8D923D6031100F17363 /* NavigatorViewController.xib */,
 				7FC2AF9623E979CB003E7C21 /* CyclistNewViewCell.xib */,
 				4947523323E98796004CAF95 /* TeamViewCell.xib */,
+				7F608C6723E9F16600048459 /* DetailCyclistViewController.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				4947523223E98796004CAF95 /* TeamViewCell.swift */,
 				7F90473523DF428E00ABDE3A /* CiclistasViewController.swift */,
 				7FC2AF9523E979CB003E7C21 /* CyclistNewViewCell.swift */,
+				7F608C6623E9F16600048459 /* DetailCyclistViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -246,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4936E1DB23CD383300BC46A6 /* LoginViewController.xib in Resources */,
+				7F608C6923E9F16600048459 /* DetailCyclistViewController.xib in Resources */,
 				7FFD611223D61D6A00439605 /* PerfilViewController.xib in Resources */,
 				7FC2AF9823E979CB003E7C21 /* CyclistNewViewCell.xib in Resources */,
 				494992D623CCD2590073E67E /* Default-568h@2x.png in Resources */,
@@ -337,6 +344,7 @@
 				169872F7238D979C007DD7D1 /* ViewController.swift in Sources */,
 				7FFD610E23D61CA100439605 /* ThemeManager.swift in Sources */,
 				49F1046323E8715A00917F4E /* RaceDetailViewController.swift in Sources */,
+				7F608C6823E9F16600048459 /* DetailCyclistViewController.swift in Sources */,
 				169872F3238D979C007DD7D1 /* AppDelegate.swift in Sources */,
 				4969C97223CE27CD0098F692 /* User.swift in Sources */,
 				49D0832C23E03C0800DDC107 /* BBDDManager.swift in Sources */,
