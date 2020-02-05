@@ -46,7 +46,8 @@ class DetailCyclistViewController: UIViewController, CyclistDelegate{
         buttonEdit.buttonImage = UIImage(named: "icons8-edit")
         buttonEdit.buttonColor = UIColor.orange
         buttonEdit.addItem(icon: nil, handler: {item in
-            print("edit")
+            self.name.isEnabled = true
+            self.name.borderStyle = UITextField.BorderStyle.roundedRect
         })
         buttonEdit.handleFirstItemDirectly = true
         buttonEdit.paddingX = 105
@@ -64,22 +65,22 @@ class DetailCyclistViewController: UIViewController, CyclistDelegate{
             imageCyclist.image = UIImage(named: "imageCyclist")
         }else{
             cyclist = manager.getCyclistById(id: cyclistId!)
-                   imageCyclist.image = UIImage(named: "imageCyclist")
-                   name.text = "Name: " + cyclist!.firstname
-                   surname.text = "Lastname: " + cyclist!.lastname
-                   country.text = "Country: " + String(cyclist!.country_id)
-                   speciality.text = "Speciality: " + String(cyclist!.specialty_id)
-                   team.text = "Team: " + String(cyclist!.team_id)
-                   birthdate.text = "Birthday: " + cyclist!.birthdate
-                   size.text = "Size: " + String(cyclist!.size) + " cm"
-                   weight.text = "Weight: " + String(cyclist!.weight) + " kg"
-                   mountain.text = "Mountain: " + String(cyclist!.mountain)
-                   plain.text = "Plain: " + String(cyclist!.plain)
-                   downhilling.text = "Downhilling: " + String(cyclist!.downhilling)
-                   sprint.text = "Sprint: " + String(cyclist!.sprint)
-                   resistance.text = "Resistance: " + String(cyclist!.resistante)
-                   recuperation.text = "Recuperation: " + String(cyclist!.recuperation)
-                   timetrial.text = "Timetrial: " + String(cyclist!.timetrial)
+            imageCyclist.image = UIImage(named: "imageCyclist")
+            name.text = "Name: " + cyclist!.firstname
+            surname.text = "Lastname: " + cyclist!.lastname
+            country.text = "Country: " + String(cyclist!.country_id)
+            speciality.text = "Speciality: " + String(cyclist!.specialty_id)
+            team.text = "Team: " + String(cyclist!.team_id)
+            birthdate.text = "Birthday: " + cyclist!.birthdate
+            size.text = "Size: " + String(cyclist!.size) + " cm"
+            weight.text = "Weight: " + String(cyclist!.weight) + " kg"
+            mountain.text = "Mountain: " + String(cyclist!.mountain)
+            plain.text = "Plain: " + String(cyclist!.plain)
+            downhilling.text = "Downhilling: " + String(cyclist!.downhilling)
+            sprint.text = "Sprint: " + String(cyclist!.sprint)
+            resistance.text = "Resistance: " + String(cyclist!.resistante)
+            recuperation.text = "Recuperation: " + String(cyclist!.recuperation)
+            timetrial.text = "Timetrial: " + String(cyclist!.timetrial)
         }
         
         
