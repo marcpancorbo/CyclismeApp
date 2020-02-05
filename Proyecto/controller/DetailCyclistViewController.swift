@@ -46,8 +46,28 @@ class DetailCyclistViewController: UIViewController, CyclistDelegate{
         buttonEdit.buttonImage = UIImage(named: "icons8-edit")
         buttonEdit.buttonColor = UIColor.orange
         buttonEdit.addItem(icon: nil, handler: {item in
-            self.name.isEnabled = true
-            self.name.borderStyle = UITextField.BorderStyle.roundedRect
+
+            for case let textField as UITextField in self.view.subviews{
+                textField.borderStyle = UITextField.BorderStyle.roundedRect
+                textField.isEnabled = true
+            }
+            self.name.text = self.cyclist!.firstname
+            self.surname.text = self.cyclist!.lastname
+            self.country.text = self.cyclist!.country_id
+            self.speciality.text = String(self.cyclist!.specialty_id)
+            self.team.text = self.cyclist!.team_id
+            self.birthdate.text = self.cyclist!.birthdate
+            self.size.text = String(self.cyclist!.size)
+            self.weight.text = String(self.cyclist!.weight)
+            self.mountain.text = String(self.cyclist!.mountain)
+            self.plain.text = String(self.cyclist!.plain)
+            self.downhilling.text = String(self.cyclist!.downhilling)
+            self.sprint.text = String(self.cyclist!.sprint)
+            self.resistance.text = String(self.cyclist!.resistante)
+            self.recuperation.text = String(self.cyclist!.recuperation)
+            self.timetrial.text = String(self.cyclist!.timetrial)
+
+            
         })
         buttonEdit.handleFirstItemDirectly = true
         buttonEdit.paddingX = 105
@@ -68,9 +88,9 @@ class DetailCyclistViewController: UIViewController, CyclistDelegate{
             imageCyclist.image = UIImage(named: "imageCyclist")
             name.text = "Name: " + cyclist!.firstname
             surname.text = "Lastname: " + cyclist!.lastname
-            country.text = "Country: " + String(cyclist!.country_id)
+            country.text = "Country: " + cyclist!.country_id
             speciality.text = "Speciality: " + String(cyclist!.specialty_id)
-            team.text = "Team: " + String(cyclist!.team_id)
+            team.text = "Team: " + cyclist!.team_id
             birthdate.text = "Birthday: " + cyclist!.birthdate
             size.text = "Size: " + String(cyclist!.size) + " cm"
             weight.text = "Weight: " + String(cyclist!.weight) + " kg"

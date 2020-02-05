@@ -107,8 +107,8 @@ class BBDDManager {
             var cyclist3 = Cyclist()
             var cyclist4 = Cyclist()
             cyclist1.id = 1
-            cyclist1.team_id = 1
-            cyclist1.country_id = 1
+            cyclist1.team_id = "VilaTeam"
+            cyclist1.country_id = "España"
             cyclist1.specialty_id = 1
             cyclist1.lastname = "Contador"
             cyclist1.firstname = "Alberto"
@@ -125,8 +125,8 @@ class BBDDManager {
             cyclist1.recuperation = 100
             cyclist1.timetrial = 34
             cyclist2.id = 2
-            cyclist2.team_id = 2
-            cyclist2.country_id = 2
+            cyclist2.team_id = "VilaTeam"
+            cyclist2.country_id = "Francia"
             cyclist2.specialty_id = 2
             cyclist2.lastname = "Mestres"
             cyclist2.firstname = "Ramon"
@@ -143,8 +143,8 @@ class BBDDManager {
             cyclist2.recuperation = 46
             cyclist2.timetrial = 23
             cyclist3.id = 3
-            cyclist3.team_id = 3
-            cyclist3.country_id = 3
+            cyclist3.team_id = "GavaTeam"
+            cyclist3.country_id = "Alemania"
             cyclist3.specialty_id = 3
             cyclist3.lastname = "Pancorbo"
             cyclist3.firstname = "Marc"
@@ -161,8 +161,8 @@ class BBDDManager {
             cyclist3.recuperation = 85
             cyclist3.timetrial = 45
             cyclist4.id = 4
-            cyclist4.team_id = 4
-            cyclist4.country_id = 4
+            cyclist4.team_id = "GavaTeam"
+            cyclist4.country_id = "Rusia"
             cyclist4.specialty_id = 4
             cyclist4.lastname = "Solans"
             cyclist4.firstname = "Arnau"
