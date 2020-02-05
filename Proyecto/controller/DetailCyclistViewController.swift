@@ -13,7 +13,7 @@ protocol CyclistDelegate {
 }
 class DetailCyclistViewController: UIViewController, CyclistDelegate{
     func delegateMethod(text: String) {
-        <#code#>
+        
     }
     
     
@@ -32,6 +32,7 @@ class DetailCyclistViewController: UIViewController, CyclistDelegate{
     @IBOutlet weak var resistance: UILabel!
     @IBOutlet weak var recuperation: UILabel!
     @IBOutlet weak var timetrial: UILabel!
+    @IBOutlet weak var surname: UILabel!
     
     private var manager = BBDDManager.getInstance()
     public var cyclistId : Int = 0
@@ -41,11 +42,13 @@ class DetailCyclistViewController: UIViewController, CyclistDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         cyclist = manager.getCyclistById(id: cyclistId)
-        imageCyclist.image = UIImage(named: "cyclistIamge")
-        name.text = "Nombre: " + cyclist!.firstname + " Apellido: " + cyclist!.lastname
+        imageCyclist.image = UIImage(named: "imageCyclist")
+        name.text = "Name: " + cyclist!.firstname
+        surname.text = "Lastname: " + cyclist!.lastname
         country.text = "Country: " + String(cyclist!.country_id)
         speciality.text = "Speciality: " + String(cyclist!.specialty_id)
-        team.text = "Team: " + cyclist!.birthdate
+        team.text = "Team: " + String(cyclist!.team_id)
+        birthday.text = "Birthday: " + cyclist!.birthdate
         size.text = "Size: " + String(cyclist!.size) + " cm"
         wight.text = "Weight: " + String(cyclist!.weight) + " kg"
         mountain.text = "Mountain: " + String(cyclist!.mountain)

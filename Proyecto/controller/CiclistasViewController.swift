@@ -10,7 +10,11 @@ import UIKit
 import RealmSwift
 import Floaty
 
-class CiclistasViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+class CiclistasViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CyclistDelegate{
+    func delegateMethod(text: String) {
+        
+    }
+    
 
     @IBOutlet weak var tableView: UITableView!
     private var manager = BBDDManager.getInstance()
@@ -55,9 +59,14 @@ class CiclistasViewController: UIViewController, UITableViewDataSource, UITableV
 
           }
        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-           return 120.0
+            return 120.0
        }
-
+       func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let cyclistDetail = DetailCyclistViewController(nibName: String(describing: DetailCyclistViewController.self), bundle: nil)
+            cyclistDetail.delegate = self
+            cyclistDetail.cyclistId = cyclistResult![indexPath.row].id
+            navigationController?.pushViewController(cyclistDetail, animated: true)
+        }
 
 
     /*
@@ -69,5 +78,7 @@ class CiclistasViewController: UIViewController, UITableViewDataSource, UITableV
         // Pass the selected object to the new view controller.
     }
     */
+    
+           
 
 }
