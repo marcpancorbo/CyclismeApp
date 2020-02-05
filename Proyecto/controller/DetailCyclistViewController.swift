@@ -18,25 +18,6 @@ class DetailCyclistViewController: UIViewController, CyclistDelegate{
     
     
     @IBOutlet weak var imageCyclist: UIImageView!
-<<<<<<< HEAD
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var country: UILabel!
-    @IBOutlet weak var speciality: UILabel!
-    @IBOutlet weak var team: UILabel!
-    @IBOutlet weak var birthday: UILabel!
-    @IBOutlet weak var size: UILabel!
-    @IBOutlet weak var wight: UILabel!
-    @IBOutlet weak var mountain: UILabel!
-    @IBOutlet weak var plain: UILabel!
-    @IBOutlet weak var downhilling: UILabel!
-    @IBOutlet weak var sprint: UILabel!
-    @IBOutlet weak var resistance: UILabel!
-    @IBOutlet weak var recuperation: UILabel!
-    @IBOutlet weak var timetrial: UILabel!
-    @IBOutlet weak var surname: UILabel!
-    private var buttonEdit = Floaty()
-    private var buttonSave = Floaty()
-=======
     
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var surname: UITextField!
@@ -53,11 +34,8 @@ class DetailCyclistViewController: UIViewController, CyclistDelegate{
     @IBOutlet weak var resistance: UITextField!
     @IBOutlet weak var recuperation: UITextField!
     @IBOutlet weak var timetrial: UITextField!
-    
-    
-    
-    
->>>>>>> 2fcdb0428cd86477cbf235733b9c68b921f19a09
+    private var buttonEdit = Floaty()
+    private var buttonSave = Floaty()
     private var manager = BBDDManager.getInstance()
     public var cyclistId: Int?
     private var cyclist: Cyclist? = nil
@@ -86,24 +64,6 @@ class DetailCyclistViewController: UIViewController, CyclistDelegate{
             imageCyclist.image = UIImage(named: "imageCyclist")
         }else{
             cyclist = manager.getCyclistById(id: cyclistId!)
-<<<<<<< HEAD
-            imageCyclist.image = UIImage(named: "imageCyclist")
-            name.text = "Name: " + cyclist!.firstname
-            surname.text = "Lastname: " + cyclist!.lastname
-            country.text = "Country: " + String(cyclist!.country_id)
-            speciality.text = "Speciality: " + String(cyclist!.specialty_id)
-            team.text = "Team: " + String(cyclist!.team_id)
-            birthday.text = "Birthday: " + cyclist!.birthdate
-            size.text = "Size: " + String(cyclist!.size) + " cm"
-            wight.text = "Weight: " + String(cyclist!.weight) + " kg"
-            mountain.text = "Mountain: " + String(cyclist!.mountain)
-            plain.text = "Plain: " + String(cyclist!.plain)
-            downhilling.text = "Downhilling: " + String(cyclist!.downhilling)
-            sprint.text = "Sprint: " + String(cyclist!.sprint)
-            resistance.text = "Resistance: " + String(cyclist!.resistante)
-            recuperation.text = "Recuperation: " + String(cyclist!.recuperation)
-            timetrial.text = "Timetrial: " + String(cyclist!.timetrial)
-=======
                    imageCyclist.image = UIImage(named: "imageCyclist")
                    name.text = "Name: " + cyclist!.firstname
                    surname.text = "Lastname: " + cyclist!.lastname
@@ -120,7 +80,6 @@ class DetailCyclistViewController: UIViewController, CyclistDelegate{
                    resistance.text = "Resistance: " + String(cyclist!.resistante)
                    recuperation.text = "Recuperation: " + String(cyclist!.recuperation)
                    timetrial.text = "Timetrial: " + String(cyclist!.timetrial)
->>>>>>> 2fcdb0428cd86477cbf235733b9c68b921f19a09
         }
         
         
