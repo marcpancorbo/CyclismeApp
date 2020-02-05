@@ -12,8 +12,8 @@ import RealmSwift
 class Cyclist : Object{
 
     @objc dynamic var id : Int = 0
-    @objc dynamic var team_id : Int = 0
-    @objc dynamic var country_id : Int = 0
+    @objc dynamic var team_id : String = ""
+    @objc dynamic var country_id : String = ""
     @objc dynamic var specialty_id : Int = 0
     @objc dynamic var lastname : String = ""
     @objc dynamic var firstname : String = ""
