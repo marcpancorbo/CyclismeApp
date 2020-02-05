@@ -8,17 +8,26 @@
 
 import UIKit
 import Foundation
-class TabBarController: UITabBarController {
+class TabBarController: UITabBarController, UITabBarControllerDelegate {
+    private var mainVC : UIViewController!
+    private var perfilVC: UIViewController!
+    private var ciclistasVC: UIViewController!
+    private var equiposVC: UIViewController!
+
     private var manager = BBDDManager.getInstance()
     override func viewDidLoad() {
         super.viewDidLoad()
         manager.initBBDD()
-
     }
-        
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        let tabBarIndex = tabBarController.selectedIndex
+        if (tabBarIndex != 1){
+            let ciclistVC = ciclistasVC as! CiclistasViewController
+            ciclistVC.button.close()
+        }
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         tabBar.backgroundColor = ThemeColor.stucomWhiteBar.HCColor
         tabBar.barTintColor = ThemeColor.stucomWhiteBar.HCColor
         tabBar.tintColor = ThemeColor.blueRibbon.HCColor
@@ -28,20 +37,20 @@ class TabBarController: UITabBarController {
         tabBar.layer.shadowRadius = 0.5
         tabBar.layer.shadowColor = UIColor.gray.cgColor
         tabBar.layer.shadowOpacity = 1
+        self.delegate = self
         
-        
-        let mainVC = NavigatorViewController(nibName: String(describing: NavigatorViewController.self), bundle: nil);
+        mainVC = NavigatorViewController(nibName: String(describing: NavigatorViewController.self), bundle: nil);
         let mainNavigationController = UINavigationController(rootViewController: mainVC)
         mainVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "event"), tag: 0)
-        let perfilVC = PerfilViewController()
+        perfilVC = PerfilViewController()
         let perfilNavigationController = UINavigationController(rootViewController: perfilVC)
         perfilVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "helmet"), tag: 3)
         
-        let ciclistasVC = CiclistasViewController()
+        ciclistasVC = CiclistasViewController()
         let ciclistaslNavigationController = UINavigationController(rootViewController: ciclistasVC)
         ciclistasVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "bike"), tag: 1)
         
-        let equiposVC = ViewController()
+        equiposVC = ViewController()
         let equiposlNavigationController = UINavigationController(rootViewController: equiposVC)
         equiposVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "group"), tag: 2)
         
@@ -56,11 +65,9 @@ class TabBarController: UITabBarController {
             controllers.append(companiesNavigationController)
         }*/
         
-        viewControllers = controllers
+        viewControllers = controllers as! [UIViewController]
     }
     
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        
-    }
+
     
 }

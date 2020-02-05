@@ -18,7 +18,7 @@ class CiclistasViewController: UIViewController, UITableViewDataSource, UITableV
 
     @IBOutlet weak var tableView: UITableView!
     private var manager = BBDDManager.getInstance()
-    private let button = Floaty()
+    public let button = Floaty()
     private var cyclistResult : Results<Cyclist>? = nil
 
      override func viewDidLoad() {
