@@ -35,29 +35,34 @@ class DetailCyclistViewController: UIViewController, CyclistDelegate{
     @IBOutlet weak var surname: UILabel!
     
     private var manager = BBDDManager.getInstance()
-    public var cyclistId : Int = 0
+    public var cyclistId: Int?
     private var cyclist: Cyclist? = nil
     public var delegate : CyclistDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cyclist = manager.getCyclistById(id: cyclistId)
-        imageCyclist.image = UIImage(named: "imageCyclist")
-        name.text = "Name: " + cyclist!.firstname
-        surname.text = "Lastname: " + cyclist!.lastname
-        country.text = "Country: " + String(cyclist!.country_id)
-        speciality.text = "Speciality: " + String(cyclist!.specialty_id)
-        team.text = "Team: " + String(cyclist!.team_id)
-        birthday.text = "Birthday: " + cyclist!.birthdate
-        size.text = "Size: " + String(cyclist!.size) + " cm"
-        wight.text = "Weight: " + String(cyclist!.weight) + " kg"
-        mountain.text = "Mountain: " + String(cyclist!.mountain)
-        plain.text = "Plain: " + String(cyclist!.plain)
-        downhilling.text = "Downhilling: " + String(cyclist!.downhilling)
-        sprint.text = "Sprint: " + String(cyclist!.sprint)
-        resistance.text = "Resistance: " + String(cyclist!.resistante)
-        recuperation.text = "Recuperation: " + String(cyclist!.recuperation)
-        timetrial.text = "Timetrial: " + String(cyclist!.timetrial)
+        if (cyclistId == nil){
+            imageCyclist.image = UIImage(named: "imageCyclist")
+        }else{
+            cyclist = manager.getCyclistById(id: cyclistId!)
+                   imageCyclist.image = UIImage(named: "imageCyclist")
+                   name.text = "Name: " + cyclist!.firstname
+                   surname.text = "Lastname: " + cyclist!.lastname
+                   country.text = "Country: " + String(cyclist!.country_id)
+                   speciality.text = "Speciality: " + String(cyclist!.specialty_id)
+                   team.text = "Team: " + String(cyclist!.team_id)
+                   birthday.text = "Birthday: " + cyclist!.birthdate
+                   size.text = "Size: " + String(cyclist!.size) + " cm"
+                   wight.text = "Weight: " + String(cyclist!.weight) + " kg"
+                   mountain.text = "Mountain: " + String(cyclist!.mountain)
+                   plain.text = "Plain: " + String(cyclist!.plain)
+                   downhilling.text = "Downhilling: " + String(cyclist!.downhilling)
+                   sprint.text = "Sprint: " + String(cyclist!.sprint)
+                   resistance.text = "Resistance: " + String(cyclist!.resistante)
+                   recuperation.text = "Recuperation: " + String(cyclist!.recuperation)
+                   timetrial.text = "Timetrial: " + String(cyclist!.timetrial)
+        }
+       
         
         
 
