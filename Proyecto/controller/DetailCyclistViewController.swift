@@ -52,7 +52,6 @@ class DetailCyclistViewController: UIViewController, CyclistDelegate{
             if  realm.isInWriteTransaction{
                 try! realm.commitWrite();
             }
-            realm.beginWrite()
             if (self.cyclist != nil){
                 self.name.text = self.cyclist!.firstname
                 self.surname.text = self.cyclist!.lastname
@@ -100,6 +99,7 @@ class DetailCyclistViewController: UIViewController, CyclistDelegate{
                     textField.borderStyle = UITextField.BorderStyle.none
                     textField.isEnabled = false
                 }
+                realm.beginWrite()
                 self.cyclist?.firstname = self.name.text!
                 self.cyclist?.lastname = self.surname.text!
                 self.cyclist?.country_id = self.country.text!
