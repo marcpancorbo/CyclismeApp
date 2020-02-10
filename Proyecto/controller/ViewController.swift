@@ -39,6 +39,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         teamTableView.allowsSelection = true
         teamTableView.separatorColor = .gray
         teamTableView.backgroundColor = .white
+        teamTableView.tableFooterView = UIView()
+
         self.teamResult = manager.findTeams()
         // Do any additional setup after loading the view.
     }

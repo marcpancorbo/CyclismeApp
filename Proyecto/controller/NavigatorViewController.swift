@@ -24,6 +24,8 @@ class NavigatorViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.allowsSelection = true
         tableView.separatorColor = .gray
         tableView.backgroundColor = .white
+        tableView.tableFooterView = UIView()
+
         self.raceResult = manager.findRaces()
         // Do any additional setup after loading the view.
     }

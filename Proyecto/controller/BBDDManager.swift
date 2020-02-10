@@ -20,6 +20,9 @@ class BBDDManager {
     public static func getInstance() -> BBDDManager {
         return bbddManager;
     }
+    public func  getRealm() -> Realm{
+        return self.realm;
+    }
     public func store(race: Object){
         try! realm.write {
             realm.add(race)

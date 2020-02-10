@@ -30,6 +30,7 @@ class CiclistasViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.allowsSelection = true
         tableView.separatorColor = .gray
         tableView.backgroundColor = .white
+        tableView.tableFooterView = UIView()
         self.cyclistResult = manager.findCyclist()
         button.addItem("New Cyclist", icon: UIImage(named: "bike"), handler: {item in
             let cyclistDetail = DetailCyclistViewController(nibName: String(describing: DetailCyclistViewController.self), bundle: nil)
