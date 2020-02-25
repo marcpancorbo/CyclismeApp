@@ -40,23 +40,21 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         self.delegate = self
         
         mainVC = NavigatorViewController(nibName: String(describing: NavigatorViewController.self), bundle: nil);
-        let mainNavigationController = UINavigationController(rootViewController: mainVC)
         mainVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "event"), tag: 0)
-        perfilVC = PerfilViewController()
-        let perfilNavigationController = UINavigationController(rootViewController: perfilVC)
+        perfilVC = PerfilViewController(nibName: String(describing: PerfilViewController.self), bundle: nil)
         perfilVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "helmet"), tag: 3)
         
-        ciclistasVC = CiclistasViewController()
-        let ciclistaslNavigationController = UINavigationController(rootViewController: ciclistasVC)
+        ciclistasVC = CiclistasViewController(nibName: String(describing: CiclistasViewController.self), bundle: nil)
         ciclistasVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "bike"), tag: 1)
         
-        equiposVC = ViewController()
-        let equiposlNavigationController = UINavigationController(rootViewController: equiposVC)
+        equiposVC = ViewController(nibName: String(describing: ViewController.self), bundle: nil)
         equiposVC.tabBarItem = UITabBarItem(title: NSLocalizedString("", comment: ""), image: UIImage(named: "group"), tag: 2)
         
         
         let controllers = [mainVC, ciclistasVC, equiposVC, perfilVC]
         
+        viewControllers = (controllers as! [UIViewController])
+
         /*Añadir dinamicamente una opcion al tabbar
         if UserDefaults.standard.bool(forKey: Constants.KCompanyAccount) {
             let companiesVC = CompaniesBuilder.build()
@@ -65,7 +63,6 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
             controllers.append(companiesNavigationController)
         }*/
         
-        viewControllers = controllers as! [UIViewController]
     }
     
 
