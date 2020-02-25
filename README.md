@@ -26,7 +26,7 @@ Por último tendremos la vista de los equipos que nos mostrará el nombre del eq
 Para está aplicación hemos usado Realm para almacenar ciclistas, carreras y equipos. Hemos instalado el pod correspondiente.
 Tenemos un manager donde creamos las tablas y la información y la guardamos. También con sus metodos de guardar un ciclista, recoger informacion de un ciclista, carrera, equipo en concreto por el id o nombre y borrar un ciclista
 
-## Login
+## Google Login
 
 Para el login hemos usado un pod de google, que nos permite iniciar sesión con una cuenta de correo Google, el inició de sesión se quedará almacenado
 para no tener que iniciar sesión cada vez que abras la aplicación
