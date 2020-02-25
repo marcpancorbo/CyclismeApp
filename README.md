@@ -1,5 +1,14 @@
-# ProyectoSwift
-APP CICLISTAS
+
+## Authors
+- Marc Pancorbo
+- Arnau Solans
+
+## Setup
+Necesitrás aplicar el siguiente comando por consola para poder instalarte los pods utilizados
+```
+pod install
+```
+## Description
 
 Este proyecto consiste en una aplicación que va destinada a amantes del ciclismo.
 Al iniciar la aplicación deberas iniciar sesión via Google y una vez registrado se mostrará una tabla con todas las carreras y sus fechas; si quieres saber más información de la carrera podrás hacer click encima de la carrera y se te abrirá una vista de la carrera con sus detalles.
