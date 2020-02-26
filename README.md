@@ -3,6 +3,8 @@
 - [Marc Pancorbo](https://github.com/marcpancorbo)
 - [Arnau Solans](https://github.com/asolans1999)
 
+## Table of Contents  
+[Setup](##Setup)
 ## Setup
 You will need to apply the following command to be able to install the used Pods:
 ```
