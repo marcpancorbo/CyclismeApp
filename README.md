@@ -8,6 +8,13 @@
 - [Model](#model)
 - [Description](#description)
 - [Navigation](#navigation)
+- [Create Cyclist](#create-cyclist)
+- [Edit Cyclist](#edit-cyclist)
+- [Delete Cyclist](#delete-cyclist)
+- [Realm](#realm)
+- [Google Login](#google-login)
+- [Pods](#pods)
+
 ## Setup
 You will need to apply the following command to be able to install the used Pods:
 ```
