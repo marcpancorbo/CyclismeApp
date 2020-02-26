@@ -4,7 +4,7 @@
 - [Arnau Solans](https://github.com/asolans1999)
 
 ## Setup
-Necesitrás aplicar el siguiente comando por consola para poder instalarte los pods utilizados
+Necesitarás aplicar el siguiente comando por consola para poder instalarte los pods utilizados
 ```
 pod install
 ```
