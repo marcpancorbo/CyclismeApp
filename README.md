@@ -1,7 +1,7 @@
 # APP CICLISMO
 ## Authors
-- Marc Pancorbo
-- Arnau Solans
+- [Marc Pancorbo](https://github.com/marcpancorbo)
+- [Arnau Solans](https://github.com/asolans)
 
 ## Setup
 Necesitrás aplicar el siguiente comando por consola para poder instalarte los pods utilizados
