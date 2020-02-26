@@ -10,8 +10,10 @@ pod install
 ```
 ## Description
 
-Esta aplicación va destinada a amantes del ciclismo con ganas de tener al alcance de su mano todos los datos relevantes sobre este deporte.
+Esta aplicación va destinada a amantes del ciclismo con ganas de tener al alcance de su mano todos los datos relevantes sobre este deporte. 
+
 Al iniciar la aplicación deberas iniciar sesión via Google y una vez registrado se mostrará una TabBar que da acceso a distintas tablas donde se presentan carreras, equipos y ciclistas; si quieres saber más información sobre cada uno de los elementos podrás hacer click sobre el item para abrir una vista con los detalles de este.
+
 En la parte inferior dispondrás de un menú con los siguientes apartados: Carreras, Ciclistas, Equipos y Perfil(Esta view solo está implementada en el menu); como hemos comentado al principio por defecto estará la de carreras.
 
 Cuando vayas a la vista de ciclistas se te mostrará una tabla con los ciclistas, de cada uno con su foto, nombre y apellido, popularidad y te mostrará si es lider, todos ellos ordenados por dicha popularidad. En la esquina inferior derecha tendremos un floating button, al hacer click nos desplegara una opcion que nos permitirá añadir un ciclista nuevo. Para añadir uno nuevo debemos rellenar la información y darle al botón de guardar.
@@ -27,8 +29,8 @@ Por último tendremos la vista de los equipos que nos mostrará el nombre del eq
 
 ## Realm
 
-Para está aplicación hemos usado Realm para almacenar ciclistas, carreras y equipos. Hemos instalado el pod correspondiente.
-Tenemos un manager donde creamos las tablas y la información y la guardamos. También con sus metodos de guardar un ciclista, recoger informacion de un ciclista, carrera, equipo en concreto por el id o nombre y borrar un ciclista
+Para está aplicación hemos utilizado Realm como método de almacenamiento de datos a nivel de dispositivo.  
+Tenemos un clase [Manager](https://github.com/marcpancorbo/ProyectoSwift/blob/master/Proyecto/controller/BBDDManager.swift) donde creamos las tablas, inicializamos la información y la guardamos, además de todos los métodos CRUD básicos como inserts, selects, y deletes entre otros.
 
 ## Google Login
 
