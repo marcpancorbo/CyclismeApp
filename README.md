@@ -10,8 +10,8 @@ pod install
 ```
 ## Description
 
-Este proyecto consiste en una aplicación que va destinada a amantes del ciclismo.
-Al iniciar la aplicación deberas iniciar sesión via Google y una vez registrado se mostrará una tabla con todas las carreras y sus fechas; si quieres saber más información de la carrera podrás hacer click encima de la carrera y se te abrirá una vista de la carrera con sus detalles.
+Esta aplicación va destinada a amantes del ciclismo con ganas de tener al alcance de su mano todos los datos relevantes sobre este deporte.
+Al iniciar la aplicación deberas iniciar sesión via Google y una vez registrado se mostrará una TabBar que da acceso a distintas tablas donde se presentan carreras, equipos y ciclistas; si quieres saber más información sobre cada uno de los elementos podrás hacer click sobre el item para abrir una vista con los detalles de este.
 En la parte inferior dispondrás de un menú con los siguientes apartados: Carreras, Ciclistas, Equipos y Perfil(Esta view solo está implementada en el menu); como hemos comentado al principio por defecto estará la de carreras.
 
 Cuando vayas a la vista de ciclistas se te mostrará una tabla con los ciclistas, de cada uno con su foto, nombre y apellido, popularidad y te mostrará si es lider, todos ellos ordenados por dicha popularidad. En la esquina inferior derecha tendremos un floating button, al hacer click nos desplegara una opcion que nos permitirá añadir un ciclista nuevo. Para añadir uno nuevo debemos rellenar la información y darle al botón de guardar.
