@@ -54,17 +54,16 @@ To delete a cyclist from the table view we will drag the row with the cyclist to
 
 ## Realm
 
-Para está aplicación hemos utilizado Realm como método de almacenamiento de datos a nivel de dispositivo.  
-Tenemos un clase [Manager](https://github.com/marcpancorbo/ProyectoSwift/blob/master/Proyecto/controller/BBDDManager.swift) donde creamos las tablas, inicializamos la información y la guardamos, además de todos los métodos CRUD básicos como inserts, selects, y deletes entre otros.
+For this application we have used Realm as a method of data storage. 
+We have a class [Manager](https://github.com/marcpancorbo/ProyectoSwift/blob/master/Proyecto/controller/BBDDManager.swift) where we create the tables, initialize the information and save it, in addition to all the basic CRUD methods such as inserts, selects, and deletes among others.
 
 ## Google Login
 
-Para el login hemos usado un pod de google, que nos permite iniciar sesión con una cuenta de correo Google, el inició de sesión se quedará almacenado
-para no tener que iniciar sesión cada vez que abras la aplicación
+To Log in he have used the Google's one, which allows us to log in with a Google email account and remember it so we don't have to enter it again.
 
 ## Pods 
 
-Para la práctica hemos utilizado los siguientes pods:
+For the application we have used the following pods:
 - [Floaty: Floating Action Button](https://github.com/kciter/Floaty)
 - [Realm](https://github.com/realm/realm-cocoa)
 - [Google Sign In](https://developers.google.com/identity/sign-in/ios/start)
