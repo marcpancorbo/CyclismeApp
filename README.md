@@ -1,4 +1,4 @@
-# APP CICLISMO
+# CYCLISME APP
 ## Authors
 - [Marc Pancorbo](https://github.com/marcpancorbo)
 - [Arnau Solans](https://github.com/asolans1999)
