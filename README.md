@@ -24,15 +24,23 @@ This application is intended for cycling enthusiasts wanting to have at their fi
 
 When starting the application you'll need to log in via Google and then you'll be able to see a TabBar that gives you access to different tables where races, teams and cyclists are presented; If you want to know more information about each of the elements you can click on the item to open a view with the details of it.
 
+### Navigation
+
 At the bottom you will have a menu with the following sections: Racing, Cyclists, Equipment and Profile (This view is only implemented in the menu); As we mentioned at the beginning by default the view will be the racing one.
 
 <img src="cambiarPantalla.gif" width="400">
 
 
 When you go to the view of cyclists you will be shown a table with the cyclists sorted by said popularity, each with their photo, name and surname, popularity and will show you if it is a category leader. 
-In the lower right corner we will have a floating button, clicking on it will display an option that will allow you to add a new cyclist. To add a new one you must fill in the information and click on the save button. 
+
+
+### Create Cyclist
+
+In the lower right corner you will have a floating button, clicking on it will display an option that will allow you to add a new cyclist. To add a new one you must fill in the information and click on the save button. 
 
 <img src="newCyclist.gif" width="400">
+
+### Edit Cyclist
 
 To see the information of a specific cyclist we will have to click on the box and it will direct us to a view with all its detailed information. In this view we will have a button to edit this cyclist.
 
@@ -40,11 +48,9 @@ To see the information of a specific cyclist we will have to click on the box an
 
 
 ### Delete Cyclist
-To eliminate a cyclist from the table view we will drag the row with the cyclist to the left: 
+To delete a cyclist from the table view we will drag the row with the cyclist to the left: 
 
 <img src="ezgif.com-video-to-gif.gif" width="400">
-
-Por último tendremos la vista de los equipos que nos mostrará el nombre del equipo y una foto.
 
 ## Realm
 
