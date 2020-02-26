@@ -4,12 +4,12 @@
 - [Arnau Solans](https://github.com/asolans1999)
 
 ## Setup
-Necesitarás aplicar el siguiente comando por consola para poder instalar los pods utilizados:
+You will need to apply the following command to be able to install the used Pods:
 ```
 pod install
 ```
 ## Model 
-El modelo de la aplicación presenta las siguientes clases: 
+The application model presents the following classes: 
 - [Cyclist](https://github.com/marcpancorbo/ProyectoSwift/blob/master/Proyecto/model/Cyclist.swift)
 
 - [Race](https://github.com/marcpancorbo/ProyectoSwift/blob/master/Proyecto/model/Race.swift)
@@ -20,7 +20,7 @@ El modelo de la aplicación presenta las siguientes clases:
 
 ## Description
 
-Esta aplicación va destinada a amantes del ciclismo con ganas de tener al alcance de su mano todos los datos relevantes sobre este deporte. 
+This application is intended for cycling enthusiasts wanting to have at their fingertips all the relevant data about this sport. 
 
 Al iniciar la aplicación deberas iniciar sesión via Google y una vez registrado se mostrará una TabBar que da acceso a distintas tablas donde se presentan carreras, equipos y ciclistas; si quieres saber más información sobre cada uno de los elementos podrás hacer click sobre el item para abrir una vista con los detalles de este.
 
