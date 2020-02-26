@@ -18,7 +18,8 @@ Cuando vayas a la vista de ciclistas se te mostrará una tabla con los ciclistas
 
 Para ver la información de un ciclista en concreto tendremos que pulsar en la tabla su casilla y nos dirigirá a una vista con toda su información detallada. En esta vista tendremos un boton para poder editar dicho ciclista.
 
-Para eliminar un ciclista desde la vista de la tabla arrastraremos el ciclista a borrar hacia la izquierda y nos saldra un opción de eliminar en su casilla de la tabla.
+### Delete Cyclist
+Para eliminar un ciclista desde la vista de la tabla arrastraremos la fila con el ciclista hacia la izquierda:
 
 <img src="ezgif.com-video-to-gif.gif" width="400">
 
