@@ -39,4 +39,4 @@ para no tener que iniciar sesión cada vez que abras la aplicación
 Para la práctica hemos utilizado los siguientes pods:
 - [Floaty: Floating Action Button](https://github.com/kciter/Floaty)
 - [Realm](https://github.com/realm/realm-cocoa)
-- Google Sign In
+- [Google Sign In](https://developers.google.com/identity/sign-in/ios/start)
