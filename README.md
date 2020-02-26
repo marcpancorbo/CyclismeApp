@@ -4,7 +4,10 @@
 - [Arnau Solans](https://github.com/asolans1999)
 
 ## Table of Contents  
-[Setup](##Setup)
+- [Setup](##Setup)
+- [Model](##Model)
+- [Description](##Description)
+- [Navigation](###Navigation)
 ## Setup
 You will need to apply the following command to be able to install the used Pods:
 ```
