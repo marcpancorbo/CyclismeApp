@@ -47,13 +47,13 @@ When you go to the view of cyclists you will be shown a table with the cyclists 
 
 In the lower right corner you will have a floating button, clicking on it will display an option that will allow you to add a new cyclist. To add a new one you must fill in the information and click on the save button. 
 
-<img src="newCyclist.gif" width="400">
+<img src="new.gif" width="400">
 
 ### Edit Cyclist
 
 To see the information of a specific cyclist we will have to click on the box and it will direct us to a view with all its detailed information. In this view we will have a button to edit this cyclist.
 
-<img src="editCyclist.gif" width="400">
+<img src="editBueno.gif" width="400">
 
 
 ### Delete Cyclist
