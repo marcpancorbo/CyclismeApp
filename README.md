@@ -31,7 +31,7 @@ Tenemos un manager donde creamos las tablas y la información y la guardamos. Ta
 Para el login hemos usado un pod de google, que nos permite iniciar sesión con una cuenta de correo Google, el inició de sesión se quedará almacenado
 para no tener que iniciar sesión cada vez que abras la aplicación
 
-## Pods Utilizados
+## Pods 
 
 Para la práctica hemos utilizado los siguientes pods:
 - [Floaty: Floating Action Button](https://github.com/kciter/Floaty)
