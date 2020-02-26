@@ -23,11 +23,8 @@ pod install
 ## Model 
 The application model presents the following classes: 
 - [Cyclist](https://github.com/marcpancorbo/ProyectoSwift/blob/master/Proyecto/model/Cyclist.swift)
-
 - [Race](https://github.com/marcpancorbo/ProyectoSwift/blob/master/Proyecto/model/Race.swift)
-
 - [Team](https://github.com/marcpancorbo/ProyectoSwift/blob/master/Proyecto/model/Team.swift)
-
 - [User](https://github.com/marcpancorbo/ProyectoSwift/blob/master/Proyecto/model/User.swift)
 
 ## Description
