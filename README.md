@@ -22,25 +22,25 @@ The application model presents the following classes:
 
 This application is intended for cycling enthusiasts wanting to have at their fingertips all the relevant data about this sport. 
 
-Al iniciar la aplicación deberas iniciar sesión via Google y una vez registrado se mostrará una TabBar que da acceso a distintas tablas donde se presentan carreras, equipos y ciclistas; si quieres saber más información sobre cada uno de los elementos podrás hacer click sobre el item para abrir una vista con los detalles de este.
+When starting the application you'll need to log in via Google and then you'll be able to see a TabBar that gives you access to different tables where races, teams and cyclists are presented; If you want to know more information about each of the elements you can click on the item to open a view with the details of it.
 
-En la parte inferior dispondrás de un menú con los siguientes apartados: Carreras, Ciclistas, Equipos y Perfil(Esta view solo está implementada en el menu); como hemos comentado al principio por defecto estará la de carreras.
+At the bottom you will have a menu with the following sections: Racing, Cyclists, Equipment and Profile (This view is only implemented in the menu); As we mentioned at the beginning by default the view will be the racing one.
 
 <img src="cambiarPantalla.gif" width="400">
 
 
-Cuando vayas a la vista de ciclistas se te mostrará una tabla con los ciclistas, de cada uno con su foto, nombre y apellido, popularidad y te mostrará si es lider, todos ellos ordenados por dicha popularidad. 
-En la esquina inferior derecha tendremos un floating button, al hacer click nos desplegara una opcion que nos permitirá añadir un ciclista nuevo. Para añadir uno nuevo debemos rellenar la información y darle al botón de guardar.
+When you go to the view of cyclists you will be shown a table with the cyclists sorted by said popularity, each with their photo, name and surname, popularity and will show you if it is a category leader. 
+In the lower right corner we will have a floating button, clicking on it will display an option that will allow you to add a new cyclist. To add a new one you must fill in the information and click on the save button. 
 
 <img src="newCyclist.gif" width="400">
 
-Para ver la información de un ciclista en concreto tendremos que pulsar en la tabla su casilla y nos dirigirá a una vista con toda su información detallada. En esta vista tendremos un boton para poder editar dicho ciclista.
+To see the information of a specific cyclist we will have to click on the box and it will direct us to a view with all its detailed information. In this view we will have a button to edit this cyclist.
 
 <img src="editCyclist.gif" width="400">
 
 
 ### Delete Cyclist
-Para eliminar un ciclista desde la vista de la tabla arrastraremos la fila con el ciclista hacia la izquierda:
+To eliminate a cyclist from the table view we will drag the row with the cyclist to the left: 
 
 <img src="ezgif.com-video-to-gif.gif" width="400">
 
