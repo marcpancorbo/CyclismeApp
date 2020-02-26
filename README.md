@@ -35,7 +35,7 @@ When starting the application you'll need to log in via Google and then you'll b
 
 ### Navigation
 
-At the bottom you will have a menu with the following sections: Racing, Cyclists, Equipment and Profile (This view is only implemented in the menu); As we mentioned at the beginning by default the view will be the racing one.
+At the bottom you will have a menu with the following sections: Racing, Cyclists, Team and Profile (This view is only implemented in the menu); As we mentioned at the beginning by default the view will be the racing one.
 
 <img src="cambiarPantalla.gif" width="400">
 
