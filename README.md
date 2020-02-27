@@ -1,33 +1,78 @@
-# APP CICLISMO
+# CYCLISME APP
 ## Authors
-- Marc Pancorbo
-- Arnau Solans
+- [Marc Pancorbo](https://github.com/marcpancorbo)
+- [Arnau Solans](https://github.com/asolans1999)
+
+## Table of Contents  
+- [Setup](#setup)
+- [Model](#model)
+- [Description](#description)
+- [Navigation](#navigation)
+- [Create Cyclist](#create-cyclist)
+- [Edit Cyclist](#edit-cyclist)
+- [Delete Cyclist](#delete-cyclist)
+- [Realm](#realm)
+- [Google Login](#google-login)
+- [Pods](#pods)
 
 ## Setup
-Necesitrás aplicar el siguiente comando por consola para poder instalarte los pods utilizados
+You will need to apply the following command to be able to install the used Pods:
 ```
 pod install
 ```
+## Model 
+The application model presents the following classes: 
+- [Cyclist](https://github.com/marcpancorbo/ProyectoSwift/blob/master/Proyecto/model/Cyclist.swift)
+- [Race](https://github.com/marcpancorbo/ProyectoSwift/blob/master/Proyecto/model/Race.swift)
+- [Team](https://github.com/marcpancorbo/ProyectoSwift/blob/master/Proyecto/model/Team.swift)
+- [User](https://github.com/marcpancorbo/ProyectoSwift/blob/master/Proyecto/model/User.swift)
+
 ## Description
 
-Este proyecto consiste en una aplicación que va destinada a amantes del ciclismo.
-Al iniciar la aplicación deberas iniciar sesión via Google y una vez registrado se mostrará una tabla con todas las carreras y sus fechas; si quieres saber más información de la carrera podrás hacer click encima de la carrera y se te abrirá una vista de la carrera con sus detalles.
-En la parte inferior dispondrás de un menú con los siguientes apartados: Carreras, Ciclistas, Equipos y Perfil(Esta view solo está implementada en el menu); como hemos comentado al principio por defecto estará la de carreras.
+This application is intended for cycling enthusiasts wanting to have at their fingertips all the relevant data about this sport. 
 
-Cuando vayas a la vista de ciclistas se te mostrará una tabla con los ciclistas, de cada uno con su foto, nombre y apellido, popularidad y te mostrará si es lider, todos ellos ordenados por dicha popularidad. En la esquina inferior derecha tendremos un floating button, al hacer click nos desplegara una opcion que nos permitirá añadir un ciclista nuevo. Para añadir uno nuevo debemos rellenar la información y darle al botón de guardar.
+When starting the application you'll need to log in via Google and then you'll be able to see a TabBar that gives you access to different tables where races, teams and cyclists are presented; If you want to know more information about each of the elements you can click on the item to open a view with the details of it.
 
-Para ver la información de un ciclista en concreto tendremos que pulsar en la tabla su casilla y nos dirigirá a una vista con toda su información detallada. En esta vista tendremos un boton para poder editar dicho ciclista.
-Para eliminar un ciclista desde la vista de la tabla arrastraremos el ciclista a borrar hacia la izquierda y nos saldra un opción de eliminar en su casilla de la tabla.
+### Navigation
 
-Por último tendremos la vista de los equipos que nos mostrará el nombre del equipo y una foto.
+At the bottom you will have a menu with the following sections: Racing, Cyclists, Team and Profile (This view is only implemented in the menu); As we mentioned at the beginning by default the view will be the racing one.
 
-## REALM
+<img src="cambiarPantalla.gif" width="400">
 
-Para está aplicación hemos usado Realm para almacenar ciclistas, carreras y equipos. Hemos instalado el pod correspondiente.
-Tenemos un manager donde creamos las tablas y la información y la guardamos. También con sus metodos de guardar un ciclista, recoger informacion de un ciclista, carrera, equipo en concreto por el id o nombre y borrar un ciclista
 
-## LOGIN
+When you go to the view of cyclists you will be shown a table with the cyclists sorted by said popularity, each with their photo, name and surname, popularity and will show you if it is a category leader. 
 
-Para el login hemos usado un pod de google, que nos permite iniciar sesión con una cuenta de correo Google, el inició de sesión se quedará almacenado
-para no tener que iniciar sesión cada vez que abras la aplicación
 
+### Create Cyclist
+
+In the lower right corner you will have a floating button, clicking on it will display an option that will allow you to add a new cyclist. To add a new one you must fill in the information and click on the save button. 
+
+<img src="new.gif" width="400">
+
+### Edit Cyclist
+
+To see the information of a specific cyclist we will have to click on the box and it will direct us to a view with all its detailed information. In this view we will have a button to edit this cyclist.
+
+<img src="editBueno.gif" width="400">
+
+
+### Delete Cyclist
+To delete a cyclist from the table view we will drag the row with the cyclist to the left: 
+
+<img src="ezgif.com-video-to-gif.gif" width="400">
+
+## Realm
+
+For this application we have used Realm as a method of data storage. 
+We have a class [Manager](https://github.com/marcpancorbo/ProyectoSwift/blob/master/Proyecto/controller/BBDDManager.swift) where we create the tables, initialize the information and save it, in addition to all the basic CRUD methods such as inserts, selects, and deletes among others.
+
+## Google Login
+
+To Log in he have used the Google's one, which allows us to log in with a Google email account and remember it so we don't have to enter it again.
+
+## Pods 
+
+For the application we have used the following pods:
+- [Floaty: Floating Action Button](https://github.com/kciter/Floaty)
+- [Realm](https://github.com/realm/realm-cocoa)
+- [Google Sign In](https://developers.google.com/identity/sign-in/ios/start)
